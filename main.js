@@ -1,28 +1,12 @@
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+// When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
 window.onscroll = function() {scrollFunction()};
-        
+
 function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("navbar").style.padding = "7px 5px";
-    document.getElementById("logo").style.fontSize = "15px";
-    document.getElementById("edu").style.fontSize = "10px";
-    document.getElementById("mail").style.fontSize = "10px";
-    document.getElementById("phone").style.fontSize = "10px";
-    document.getElementById('me'). style.width='130px';
-    document.getElementById('education').style.fontSize = '15px';
-    document.getElementById('phoneicon').style.fontSize = '15px';
-    document.getElementById('mailicon').style.fontSize = '15px';
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.padding = "80px 10px";
-    document.getElementById("logo").style.fontSize = "30px";
-    document.getElementById("edu").style.fontSize = "23px";
-    document.getElementById("mail").style.fontSize = "23px";
-    document.getElementById("phone").style.fontSize = "23px";
-    document.getElementById('me'). style.width='220px';
-    document.getElementById('education').style.fontSize = '30px';
-    document.getElementById('phoneicon').style.fontSize = '30px';
-    document.getElementById('mailicon').style.fontSize = '30px';
+    document.getElementById("navbar").style.top = "-50px";
   }
 }
 filterSelection("all")
@@ -67,13 +51,4 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
-}
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
 }
