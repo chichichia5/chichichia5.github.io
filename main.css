@@ -2,13 +2,14 @@ body {
     font-family: monospace;
 }
 
-/*@media all and (min-width:480px)and (max-width:768px) { 
-  h2{
-    font-size:
+@media only screen and (max-width: 896px) {
+  #ativities1 {
+    height:600px;
   }
-    
+  #ativities2 {
+    height:600px;
   }
-}*/
+}
   
 
 ul {
