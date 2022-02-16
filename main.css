@@ -1,9 +1,11 @@
 body {
     font-family: monospace;
 }
-
-
-  
+@media  only screen and (min-device-width: 800px){
+  .activities1 {
+    min-height: 100vh;
+  }
+}
 
 ul {
     font-family: helvetica;
@@ -36,41 +38,50 @@ p::selection{
     color:#FFFF;
     height:280px;
     padding:20px 20px 10px 20px;
+    width:100%;
 }
 #jobs {
     background-color: #D8D8D8 ;
     color:#000;
     height: 500px;
+    width:100%;
 }
 #jobs2 {
   background-color: #D8D8D8 ;
   color:#000;
-  height: 500px;
+  height: 400px;
+  width:100%;
 }
 #activities1 {
     background-color: #D8D8D8 ;
     color:#000;
-    height: 2000px;
+    height:1000px;
+    width:100%;
 }
 #activities2 {
   background-color: #D8D8D8 ;
   color:#000;
-  height: 2000px;
+  height: 1000px;
+  width:100%;
 }
 #certificates {
   background-color: #D8D8D8 ;
   color:#000;
   height: 1000px;
+  width:100%;
 }
 #skills {
   background-color: #D8D8D8 ;
   color:#000;
-  height: 500px;
+  height: 1000px;
+  width:100%;
 }
 #works {
   background-color: #D8D8D8 ;
   color:#000;
   height: 4000px;
+  width:100%;
+  
 }
 
 .project {
@@ -109,6 +120,7 @@ p::selection{
 }
 
 /* Style the navbar links */
+/*menu*/
 #navbar a {
   float: left;
   display: block;
@@ -175,11 +187,11 @@ p {
 /* 活動比賽 */
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 20%;
+  height: 35vh;
   perspective: 1000px;
   float: left;
-  margin:35px 20px 35px 20px;
+  margin:3vw 2vw 3vw 2vw;
   position:relative; 
   top:3vw
   
@@ -219,14 +231,15 @@ p {
   background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
+
 }
 /* 專業證照 */
 /* Float four columns side by side */
 .column2 {
   float: left;
-  width: 300px;
+  width: 20%;
   height:200px;
-  padding: 0 30px;
+  padding: 0 1vw;
   position:relative; 
   top:3vw
   
