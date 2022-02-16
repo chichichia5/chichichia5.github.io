@@ -1,348 +1,343 @@
-body {
-    font-family: monospace;
-}
-@media  only screen and (min-device-width: 800px){
-  .activities1 {
-    min-height: 100vh;
-  }
-}
+<!DOCTYPE html>
 
-ul {
-    font-family: helvetica;
-}
-a {
-  text-decoration: none;
-  color: #0066CC;
-}
-h3 {
-    text-align: left;
-    font-size: 30px; 
-    text-indent: 10px;
-}
-h1::selection {
-    background: #0ABAB5;
-}
-h2::selection {
-    background: #0ABAB5;
-}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width;initial-scale=1.0;user-scalable=1;maximum-scale=1.0">
+    <title>個人履歷</title> 
+    <link rel="stylesheet" href="main.css">
+    <script src= 'main.js'></script>
+    <script src="https://kit.fontawesome.com/836af3f0a0.js" crossorigin="anonymous"></script>
+</head>
 
-p::selection{
-    background: #0ABAB5;
-}
+<body>
+  <div id="navbar">
+    <a href="#intro">回首頁</a>
+    <a href="#jobs">工作經驗</a>
+    <a href="#activities1">社團活動</a>
+    <a href="#certificates">專業證照</a>
+    <a href="#skills">語言能力&技能</a>
+    <a href="#works">作品集</a>
+  </div>
+    <div id="intro">
+        <img id="me" src='myself.jpg'style = "float:left; width: 15%;border-radius: 50%;">
+        <h2  style="text-indent: 20px;font-size:25px">曾琦雅 Chi- Ya Tseng</h2>
+        <p><i id='education'class="fas fa-graduation-cap"style="float:left; text-indent:20px;"></i></p>
+        <h2 style="text-indent: 12px">學校科系：國立臺北科技大學 應用英文系</h2>
+        <p><i id='mailicon'class="fas fa-at"style="float:left; text-indent:20px;"></i></p>
+        <h2 style="text-indent: 20px">聯絡信箱：chiyazheng0329@gmail.com</h2>
+        <p><i id='phoneicon'class="fas fa-phone"style="float:left; text-indent:20px;"></i></p>
+        <h2 style="text-indent: 20px">聯絡電話：0979-314-365</h2>
+    </div>
+    <div style="padding:15px 10px;"id ='jobs'>
+        <p><i class="fas fa-briefcase" style="font-size:60px;float:left;position:relative;top:3vw"></i></p>
+        <h3 style="text-indent: 50px;position:relative;top:3vw">工作經驗</h3>
+        <div class="container" style='position:relative;'>
+            <img src="儒林.jpg" alt="Avatar" class="image" style="width: 50%;">
+            <div class="middle">
+            <div class="text"><b>儒林補習班-英文輔導老師</b>
+              <p>負責輔導高中學測英文，講解題目，文法指導</p>
+            </div>
+            </div>
+            <div style="border-width: 3px; border-radius: 50px; border-style:solid ; width: 30%; height: 10%; border-color: rgba(85, 116, 255, 0.877); padding: 5px; text-align: center; position: absolute;left:9vw;top:17vw ;">
+              <span style="color: #000;font-size:1vw">2021.10~現在</span></div>
+        </div>  
+        <div class="container">
+            <img src="教育部.png" alt="Avatar" class="image" style="width: 50%;">
+            <div class="middle">
+            <div class="text"><b>教育部－夜光天使遠距教學計畫</b>
+              <p>以自編英文教材遠距輔導全臺偏鄉國小學童英文</p>
+            </div>
+            </div>
+            <div style="border-width: 3px; border-radius: 50px; border-style:solid ; width: 30%; height: 10%; border-color: rgba(85, 116, 255, 0.877); padding: 5px; text-align: center; position: absolute;left:9vw;top:17vw;">
+              <span style="color: #000;font-size:1vw">2021.10~現在</span></div>
+        </div> 
+        <div class="container">
+            <img src="cnc1.png" alt="Avatar" class="image" style="width: 50%;">
+            <div class="middle">
+            <div class="text"><b>國立臺北科技大學計算機與網路中心－工讀生</b>
+              <p>全校師生電腦/網路問題排解</p>
+            </div>
+            </div>
+            <div style="border-width: 3px; border-radius: 50px; border-style:solid ; width: 30%; height: 10%; border-color: rgba(85, 116, 255, 0.877); padding: 5px; text-align: center; position: absolute;left:9vw;top:17vw;">
+              <span style="color: #000;font-size:1vw">2020.02~現在</span></div>
+        </div>
+        </div>
+        <div style="padding:15px 10px;"id ='jobs2'>
+          <div class="container">
+              <img src="aery.png" alt="Avatar" class="image" style="width: 50%;">
+              <div class="middle">
+              <div class="text"><b>社群小編</b>
+                <p>臉書客服回覆/官網中英文文案撰寫/中英文產品說明書撰寫</p>
+              </div>
+              </div>
+              <div style="border-width: 3px; border-radius: 50px; border-style:solid ; width: 30%; height: 10%; border-color: rgba(85, 116, 255, 0.877); padding: 5px; text-align: center; position: absolute;left:9vw;top:17vw;">
+                <span style="color: #000;font-size:1vw">2021.07~2021.08</span></div>
+          </div>  
+          <div class="container">
+              <img src="joy.png" alt="Avatar" class="image" style="width: 50%;">
+              <div class="middle">
+              <div class="text"><b>佳音英文-英文輔導老師</b>
+                <p>輔導兒童英文/補課</p>
+              </div>
+              </div>
+              <div style="border-width: 3px; border-radius: 50px; border-style:solid ; width: 30%; height: 10%; border-color: rgba(85, 116, 255, 0.877); padding: 5px; text-align: center; position: absolute;left:9vw;top:17vw;">
+                <span style="color: #000;font-size:1vw">2020.09~2021.09</span></div>
+          </div>
+        </div> 
+        
 
-.text::selection{
-    background: #0ABAB5;
-}
-#intro {
-    background-color: #003366;
-    color:#FFFF;
-    height:280px;
-    padding:20px 20px 10px 20px;
-    width:100%;
-}
-#jobs {
-    background-color: #D8D8D8 ;
-    color:#000;
-    height: 500px;
-    width:100%;
-}
-#jobs2 {
-  background-color: #D8D8D8 ;
-  color:#000;
-  height: 400px;
-  width:100%;
-}
-#activities1 {
-    background-color: #D8D8D8 ;
-    color:#000;
-    height:1000px;
-    width:100%;
-}
-#activities2 {
-  background-color: #D8D8D8 ;
-  color:#000;
-  height: 1000px;
-  width:100%;
-}
-#certificates {
-  background-color: #D8D8D8 ;
-  color:#000;
-  height: 1000px;
-  width:100%;
-}
-#skills {
-  background-color: #D8D8D8 ;
-  color:#000;
-  height: 1000px;
-  width:100%;
-}
-#works {
-  background-color: #D8D8D8 ;
-  color:#000;
-  height: 4000px;
-  width:100%;
+<div style='padding:15px 20px;'id="activities1">
+    <p><i class="fas fa-users"style="font-size:60px;float:left;position:relative;top:3vw "></i></p>
+    <h3 style="text-indent: 50px;position:relative;top:3vw">社團活動</h3>
+    <b><p style="font-size:30px;position:relative; top:3vw">2020年</p></b>
+    <hr style="position:relative;top:3vw">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="SA.jpg" alt="Avatar" style="width:100%;">
+    </div>
+    <div class="flip-card-back">
+      <h1 style='font-size:1.5vw'>學生自治會</h1> 
+      <p style='font-size:1vw'><u>財務部－部員</u></p> 
+      <p style="padding:0 10px;line-height: 1.2vw;font-size:1vw">在學生會的期間，負責舉辦全校性的活動。例如：校慶園遊會、校園演唱會等等。而在財務部中，我們負責器材的租借、資金的整理，並且整理財務報表到學生會粉專讓全校師生了解學生會資金動向。</p>
+    </div>
+</div>
+</div>
+<div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="扶青.jpg" alt="Avatar" style="width:100%;">
+      </div>
+      <div class="flip-card-back">
+        <h1 style='font-size:1.5vw'>扶輪青年社</h1> 
+        <p style='font-size:1vw'><u>公關</u></p> 
+        <p style="padding:0 10px;line-height: 1.2vw;font-size:1vw">扶輪青年社主要是在課後提供偏鄉國小的學童英文教學，並且每學期會到各國小做訪視。而我身為公關，負責規劃社團內的活動，以及撰寫臉書粉專貼文來吸引更多同學加入我們的社團。</p>
+      </div>
+    </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="司儀.jpg" alt="Avatar" style="width:100%;">
+    </div>
+    <div class="flip-card-back">
+      <h1 style='font-size:1.5vw'>政見發表會</h1> 
+      <p style='font-size:1vw'><u>司儀</u></p> 
+      <p style="padding:0 10px;line-height: 1.2vw;font-size:1vw">規劃政見發表會活動流程。</p>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="新生說明會.jpg" alt="Avatar" style="width:100%;">
+    </div>
+    <div class="flip-card-back">
+      <h1 style='font-size:1.5vw'>新生活動說明會</h1> 
+      <p style='font-size:1vw'><u>隊輔組</u></p> 
+      <p style="padding:0 10px;line-height: 1.2vw;font-size:1vw;">與新生互動，帶領他們認識臺北科技大學，並解答他們對於剛進入大學遇到的問題。</p>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="lalaland.jpg" alt="Avatar" style="width:100%;">
+    </div>
+    <div class="flip-card-back">
+      <h1 style='font-size:1.5vw'>英文周公演</h1> 
+      <p style='font-size:1vw'><u>舞蹈組</u></p> 
+      <p style="padding:0 10px;line-height: 1.2vw;font-size:1vw;">這次的主題是LaLaLand樂來樂愛你，需要花許多課後時間練習舞蹈，並在1000人的舞台上展現成果。</p>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="student buddy.jpg" alt="Avatar" style="width:100%;">
+    </div>
+    <div class="flip-card-back">
+      <h1 style='font-size:1.5vw'>交換生學伴</h1> 
+      <p style='font-size:1vw'><u>成員</u></p> 
+      <p style="padding:0 10px;line-height: 1.2vw;font-size:1vw;">我的學伴是一位印尼人，在他來臺灣的期間，我擔任他的學伴，解決他在臺灣遇到的問題，並且帶他體驗臺灣的文化。</p>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="redhouse.jpg" alt="Avatar" style="width:100%;display:block; margin:auto;">
+    </div>
+    <div class="flip-card-back">
+      <h1 style='font-size:1.5vw'>第14屆紅樓獎</h1> 
+      <p style='font-size:1vw'><u>晚會組/評鑑組/器材組</u></p> 
+      <p style="padding:0 10px;line-height: 1.2vw;font-size:1vw;">紅樓獎是臺北科技大學一年一度的社團評鑑活動，在晚會組中，我必須學會接待禮儀。而在評鑑組中，我負責幫忙各個社團展示成果。而在器材組，我負責管理活動器材。</p>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="送舊.JPG" alt="Avatar" style="width:100%;">
+    </div>
+    <div class="flip-card-back">
+      <h1 style='font-size:1.5vw'>學生會送舊</h1> 
+      <p style='font-size:1vw'><u>活動組</u></p> 
+      <p style="padding:0 10px;line-height: 1.2vw;font-size:1vw;">我負責活動的發想、道具製作、場地安排。這是我第一次設計一個遊戲，雖然在過程中遇到了人力不夠以及場地的問題，但最後還是一一解決了，並且辦出成功的送舊活動給學長姐，留下美好的回憶。</p>
+    </div>
+  </div>
+</div>
+</div>
+<div style='padding:15px 20px;'id="activities2">
+  <p><i class="fas fa-users"style="font-size:60px;float:left;position:relative;top:3vw "></i></p>
+  <h3 style="text-indent: 50px;position:relative;top:3vw ">社團活動</h3>
+  <b><p style="font-size:30px;position:relative;top:3vw ">2021年</p></b>
+  <hr style="position:relative;top:3vw">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="公開賽.jpg" alt="Avatar" style="width:100%;">
+    </div>
+    <div class="flip-card-back">
+      <h1 style='font-size:1.5vw'>110年 </h1>
+      <h1 style='font-size:1.5vw'> 全國大專院校田徑公開賽</h1> 
+      <p style='font-size:1vw'><u>4X400公尺接力 第八名</u></p> 
+      <p></p>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="全大運.jpg" alt="Avatar" style="width:100%;">
+    </div>
+    <div class="flip-card-back">
+      <h1 style='font-size:1.5vw'>110年</h1>
+      <h1 style='font-size:1.5vw'>全國大專院校運動會</h1> 
+      <p style='font-size:1vw'><u>4X100公尺接力 第七名</u></p> 
+      <p></p>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="媒體識讀.png" alt="Avatar" style="width:100%;">
+    </div>
+    <div class="flip-card-back">
+      <h1 style='font-size:1.5vw'>媒體素養教育活動推廣計畫</h1>
+      <h1 style='font-size:1.5vw'>講座心得比賽</h1> 
+      <p style='font-size:1vw'><u>榮獲佳作</u></p> 
+      <p style="padding:0 10px;line-height: 1.2vw;font-size:1vw;">在課程「媒體與社會中」，老師邀請許多記者分享媒體的細節。因此，我對媒體在火災事故中扮演的角色做出更多的研究，也順利的在這場比賽中獲得佳作。</p>
+    </div>
+  </div>
+</div>
+</div>
+<div style='padding:15px 20px;'id="certificates">
+    <p><i class="fas fa-book-open"style="font-size:60px;float:left;position:relative;top:3vw "></i></p>
+    <h3 style="text-indent: 50px;position:relative;top:3vw ">專業證照</h3>
+
+    <div class="row" style="position: relative;top:50px;">
+    <div class="column2">
+        <div class="card" style="height:280px">
+        <p><img src="toeicscore.png" style="width:120px"></p>
+        <h3 style="text-align: center;padding:20px;">TOEIC<br>930分</h3>
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="card"style="height:280px">
+        <p><img src="magnifier.png" style="width:80px"></p>
+        <h3 style="text-align: center;font-size:28px">Google Ads<br>搜尋廣告認證</h3>
+        </div>
+    </div>
+    <div class="column2">
+      <div class="card"style="height:280px">
+      <p><img src="media.png" style="width:80px"></p>
+      <h3 style="text-align: center;font-size:28px">Google Ads<br>多媒體廣告認證</h3>
+      <p></p>
+    </div>
+    </div>
+    <div class="column2">
+        <div class="card"style="height:280px">
+        <p><img src="丙檢.png" style="width:90px"></p>
+        <h3 style="text-align: center;font-size:25px;padding:10px;">國貿業務技術士檢定</h3>
+        </div>
+    </div>    
+    
+    </div>
+    
+    
+</div>
+</div>
+<div style='padding:15px 20px;'id="skills">
+    <p><i class="fas fa-comments" style="font-size:60px;float:left;position:relative;top:3vw"></i></p>
+    <h3 style="text-indent: 50px;position:relative; top:3vw">語言能力&技能</h3>
+    <div class="container2" style="position: relative;top:3vw">
+        <div class="bar fluent" data-skill="英文" style="color:black;">精通</div>
+        <div class="bar front expert" data-skill="中文"style="color:black;">母語</div>
+        <div class="bar back intermediate" data-skill="西文 "style="color:black;">學習中</div>
+        <div class="bar back intermediate" data-skill="Python "style="color:black;">學習中</div>
+        <div class="bar back intermediate" data-skill="HTML "style="color:black;">學習中</div>
+    </div>
+</div>
+<div style='padding:15px 20px;'id="works">
+  <p><i class="fa-solid fa-folder-open"style="font-size:60px;float:left;position:relative;top:3vw "></i></p>
+  <h3 style="text-indent: 50px;position:relative;top:3vw ">作品集</h3>
+  <div class="project">
+    <div class="subproject">
+      <img src="python1.png"style="position:relative;top:10%;width:100%;"><br>
+      <img src="python2.png"style="position:relative;top:20%;width:45%;left:5%;">
+      <img src="python 3.png"style="position:relative;top:20%;width:45%;left:5%;">
+    </div>
+    <h3 style="color:#0066CC;padding:7vw 0 0 0;"><a href='https://reurl.cc/bkVMlX'>Python 資料視覺化</a></h3>
+    <h2 style="position:relative;padding:1vw 1vw;line-height: 50px;">利用python，將將近4000筆資料，整理成圖表，方便閱讀。</h2>
+  </div>
+  <div class="project">
+    <div class="subproject">
+      <img src="Aery FB.png"style="position:relative;top:25%;width:100%;">
+    </div>
+    <h3 style="color:#0066CC;padding:7vw 0 0 0;"><a href='https://reurl.cc/bkVMlX'>Aery 臉書文章</a></h3>
+    <h2 style="position:relative;padding:1vw 1vw;line-height: 50px;">在Aery工作的期間，我負責在Aery工作的期間，我負責臉書文案的發想。這篇文章主要是提醒使用者新功能的更新，順便宣傳Aery會聆聽顧客的意見做出修改。</h2>
+  </div>
   
-}
+  <div class="project">
+    <div class="subproject">
+      <img src="Aery post.png"style="position:relative;top:25%;width:100%;">
+    </div>
+    <h3 style="color:#0066CC;padding:7vw 0 0 0;"><a href='https://reurl.cc/3jXGXM'>Aery 官方網站文章</a></h3>
+    <h2 style="position:relative;padding:1vw 1vw;line-height: 50px;">另外，我也負責官網文章的編寫。主要是比較市面上常見品牌的繪圖板，並整理成表格，提供每位想要購買繪圖板的人意見。除了中文版外，也有提供英文版的文章。</h2>
+  </div>
 
-.project {
-  background-color: #D8D8D8 ;
-  color:#000;
-  height:13%;
-  width: 55%;
-  padding:0 0 0 10px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  margin:0px auto;
-  position:relative;
-  top:3vw;
-  z-index:1;
+  <div class="project">
+    <div class="subproject">
+      <img src="bsd.png"style="position:relative;top:25%;width:100%;">
+    </div>
+    <h3 style="color:#0066CC;padding:7vw 0 0 0;"><a href='https://reurl.cc/AKjx4K'>互動小遊戲</a></h3>
+    <h2 style="position:relative;padding:1vw 1vw;line-height: 50px;">在「科技與產業應用」這堂課中，老師邀請了業師教我們使用html、Javascript以及CSS做出一個小遊戲。在學期末的展示中，我的小遊戲獲得全班最高分，也讓我對程式語言更加有興趣。</h2>
+  </div>  
+
+  <div class="project">
+    <div class="subproject">
+      <img src="wix.jpg"style="position:relative;top:25%;width:100%;">
+    </div>
+    <h3 style="color:#0066CC;padding:7vw 0 0 0;"><a href='https://reurl.cc/xOadLV'>Wix 官方網站</a></h3>
+    <h2 style="position:relative;padding:1vw 1vw;line-height: 50px;">在「創業0到2的思維與實作」這堂課中，各組必須透過各種方式宣傳自己設計的產品，而我們這組利用Wix來架出基本的官方網站，並且提供產品資訊，團隊介紹。方便顧客了解細節。</h2>
+  </div>  
   
-}
-.subproject{
-  background-color:#2980b9;
-  color:#000;
-  height:100%;
-  width: 50%;
-  float:right;
-  position:relative;
-  z-index:2;
-}
-.end {
-  background-color:#B5B5B5;
-  height:150px;
-}
-#navbar {
-  background-color: #4682B4; /* Black background color */
-  position: fixed; /* Make it stick/fixed */
-  top: -50px; /* Hide the navbar 50 px outside of the top view */
-  width: 100%; /* Full width */
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
-  z-index:9999;
-}
+<div class="project">
+  <div class="subproject">
+    <img src="line.jpg"style="position:relative;left:18%;height:100%;">
+  </div>
+  <h3 style="color:#0066CC;padding:7vw 0 0 0;"><a href='https://lin.ee/xN1JfY6'>LINE 官方帳號</a></h3>
+  <h2 style="position:relative;padding:1vw 1vw;line-height: 50px;">此外，我們也規劃了LINE的官方帳號，方便使用者加入好友後，可以透過帳號得知最新消息、聯絡客服人員、或是將品牌分享給好友，提升品牌曝光度。</h2>
+</div>
 
-/* Style the navbar links */
-/*menu*/
-#navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  text-decoration: none;
-  font-size:18px;
-}
-
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/*工作的動畫*/ 
-  .container {
-    position:relative;
-    width: 30%;
-    float: left;
-    top:3vw;
-  }
+<div class="end">
+  <h2 style="text-align:center;position:relative;top:70px;">Last Updated:2022/02/14</h2>
+</div> 
   
-  .image {
-    opacity: 1;
-    display: block;
-    width: 30%;
-    height: 30%;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    margin: auto;
-  }
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align:center;
-  }
-  
-  .container:hover .image {
-    opacity:0.1;
-  }
-  .container:hover .middle {
-    opacity:1;
-}
-
-  .text {
-    color: black;
-    font-size: 20px;
-    padding: 10px 10px;
-    text-align: center;
-    font-family: Microsoft JhengHei;
-  }
-p {
-    text-align: center;
-    font-size: large;
-    font-family: Microsoft JhengHei;
-}
-
-/* 活動比賽 */
-.flip-card {
-  background-color: transparent;
-  width: 20%;
-  height: 35vh;
-  perspective: 1000px;
-  float: left;
-  margin:3vw 2vw 3vw 2vw;
-  position:relative; 
-  top:3vw
-  
-  
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
- 
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-card-back {
-  background-color: #2980b9;
-  color: white;
-  transform: rotateY(180deg);
-
-}
-/* 專業證照 */
-/* Float four columns side by side */
-.column2 {
-  float: left;
-  width: 20%;
-  height:200px;
-  padding: 0 1vw;
-  position:relative; 
-  top:3vw
-  
-}
-
-.row2 {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row2:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column2 {
-    width: 100%;
-    display: block;
-    margin-bottom: 10px;
-  }
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #4682B4;
-  color: white;
-}
-
-.fa {font-size:50px;}
-/* 能力 */
-.container2{
-  width: 80%;
-  margin: 0 auto;
-}
-@keyframes load{
-  from {
-    width: 0%
-  }
-}
-@-webkit-keyframes load{
-  from {
-    width: 0%
-  }
-}
-@-moz-keyframes load{
-  from {
-    width: 0%
-  }
-}
-@-o-keyframes load{
-  from {
-    width: 0%
-  }
-}
-
-.bar{
-  background-color: #EEE;
-  padding: 7px;
-  border-radius: 30px;
-  margin-bottom: 10px;
-  font-size: 28px;
-  color: #FFF;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-}
-.bar::before{
-  content:  attr(data-skill);
-  background-color: #f3b0ff;
-  display: inline-block;
-  padding: 5px 0 5px 10px;
-  border-radius: inherit;
-  animation: load 2s 0s;
-  -webkit-animation: load 2s 0s;
-  -moz-animation: load 2s 0s;
-  -o-animation: load 2s 0s;
-}
-
-.bar.front::before{
-  background-color: #98FB98;
-}
-.bar.back::before{
-  background-color: #a6cfe3;
-}
-
-.bar.learning::before{
-  width: calc(10% - 10px);
-}
-.bar.basic::before{
-  width: calc(30% - 10px);
-}
-.bar.intermediate::before{
-  width: calc(50% - 10px);
-}
-.bar.advanced::before{
-  width: calc(70% - 10px);
-}
-.bar.expert::before{
-  width: calc(90% - 10px);
-
-}.bar.fluent::before{
-  width: calc(90% - 10px);
-}
+</body>
+</html>
