@@ -1,11 +1,7 @@
 body {
     font-family: monospace;
 }
-@media  only screen and (min-device-width: 800px){
-  .activities1 {
-    min-height: 100vh;
-  }
-}
+
 
 ul {
     font-family: helvetica;
@@ -16,7 +12,7 @@ a {
 }
 h3 {
     text-align: left;
-    font-size: 30px; 
+    font-size: 2vw; 
     text-indent: 10px;
 }
 h1::selection {
@@ -52,18 +48,13 @@ p::selection{
   height: 400px;
   width:100%;
 }
-#activities1 {
+#activities {
     background-color: #D8D8D8 ;
     color:#000;
     height:1000px;
     width:100%;
 }
-#activities2 {
-  background-color: #D8D8D8 ;
-  color:#000;
-  height: 1000px;
-  width:100%;
-}
+
 #certificates {
   background-color: #D8D8D8 ;
   color:#000;
@@ -79,7 +70,7 @@ p::selection{
 #works {
   background-color: #D8D8D8 ;
   color:#000;
-  height: 4000px;
+  height: 5000px;
   width:100%;
   
 }
@@ -87,7 +78,7 @@ p::selection{
 .project {
   background-color: #D8D8D8 ;
   color:#000;
-  height:13%;
+  height:500px;
   width: 55%;
   padding:0 0 0 10px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -100,16 +91,14 @@ p::selection{
 .subproject{
   background-color:#2980b9;
   color:#000;
-  height:100%;
+  height:500px;
   width: 50%;
   float:right;
   position:relative;
   z-index:2;
 }
-.end {
-  background-color:#B5B5B5;
-  height:150px;
-}
+
+
 #navbar {
   background-color: #4682B4; /* Black background color */
   position: fixed; /* Make it stick/fixed */
@@ -137,7 +126,7 @@ p::selection{
 }
 
 /*工作的動畫*/ 
-  .container {
+  .container1 {
     position:relative;
     width: 30%;
     float: left;
@@ -164,16 +153,16 @@ p::selection{
     text-align:center;
   }
   
-  .container:hover .image {
+  .container1:hover .image {
     opacity:0.1;
   }
-  .container:hover .middle {
+  .container1:hover .middle {
     opacity:1;
 }
 
   .text {
     color: black;
-    font-size: 20px;
+    font-size: 1.2vw;
     padding: 10px 10px;
     text-align: center;
     font-family: Microsoft JhengHei;
@@ -184,55 +173,102 @@ p {
     font-family: Microsoft JhengHei;
 }
 
-/* 活動比賽 */
-.flip-card {
-  background-color: transparent;
-  width: 20%;
-  height: 35vh;
-  perspective: 1000px;
-  float: left;
-  margin:3vw 2vw 3vw 2vw;
-  position:relative; 
-  top:3vw
-  
-  
+/*activities*/
+* {
+  box-sizing: border-box;
 }
 
-.flip-card-inner {
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
   position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
- 
 }
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  
 }
 
-.flip-card-front, .flip-card-back {
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-
-}
-
-.flip-card-front {
-  background-color: #bbb;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
   color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none; 
 }
 
-.flip-card-back {
-  background-color: #2980b9;
+/* Position the "next button" to the right */
+.prev {
+  left: 22%;
+  border-radius: 3px 0 0 3px;
+}
+.next {
+  right: 22%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255,);
+}*/
+
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
   color: white;
-  transform: rotateY(180deg);
+  width:55%;
+  margin:auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 9%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.text{
+  font-size:1.5vw;
+  text-align: center;
 
 }
+
 /* 專業證照 */
 /* Float four columns side by side */
 .column2 {
