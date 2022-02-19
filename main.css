@@ -70,7 +70,7 @@ p::selection{
 #works {
   background-color: #D8D8D8 ;
   color:#000;
-  height: 5000px;
+  height: 4500px;
   width:100%;
   
 }
@@ -160,7 +160,7 @@ p::selection{
     opacity:1;
 }
 
-  .text {
+  .text1 {
     color: black;
     font-size: 1.2vw;
     padding: 10px 10px;
@@ -228,7 +228,7 @@ img {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(255, 255, 255,);
+  background-color:#ADD8E6;
 }*/
 
 
@@ -237,7 +237,7 @@ img {
   text-align: center;
   background-color: #222;
   padding: 2px 16px;
-  color: white;
+  color:white;
   width:55%;
   margin:auto;
 }
@@ -266,6 +266,9 @@ img {
 .text{
   font-size:1.5vw;
   text-align: center;
+  background-color: #ADD8E6;
+  width:55%;
+  margin:auto;
 
 }
 
