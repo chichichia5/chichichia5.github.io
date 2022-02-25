@@ -70,7 +70,7 @@ p::selection{
 #works {
   background-color: #D8D8D8 ;
   color:#000;
-  height: 5500px;
+  height: 6000px;
   width:100%;
   
 }
@@ -78,7 +78,7 @@ p::selection{
 .project {
   background-color: #D8D8D8 ;
   color:#000;
-  height:500px;
+  height:600px;
   width: 55%;
   padding:0 0 0 10px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -91,7 +91,7 @@ p::selection{
 .subproject{
   background-color:#2980b9;
   color:#000;
-  height:500px;
+  height:600px;
   width: 50%;
   float:right;
   position:relative;
@@ -361,7 +361,7 @@ img {
 }
 
 .bar.front::before{
-  background-color: #98FB98;
+  background-color: #AFEEEE;
 }
 .bar.back::before{
   background-color: #a6cfe3;
@@ -385,3 +385,14 @@ img {
 }.bar.fluent::before{
   width: calc(90% - 10px);
 }
+.footer{
+  background-color: #A9A9A9;
+  height: 100px;
+  margin-top: 20px;
+}
+.footer-text{
+  float: center;
+  font-size: 1vw;
+  color: black;
+  line-height: 100px;
+}  
