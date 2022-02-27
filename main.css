@@ -10,6 +10,12 @@ a {
   text-decoration: none;
   color: #0066CC;
 }
+h2{
+  font-family: Arial;
+}
+h3{
+  font-family: Arial;
+}
 h3 {
     text-align: left;
     font-size: 2vw; 
@@ -32,7 +38,7 @@ p::selection{
 #intro {
     background-color: #003366;
     color:#FFFF;
-    height:280px;
+    height:300px;
     padding:20px 20px 10px 20px;
     width:100%;
 }
@@ -51,7 +57,7 @@ p::selection{
 #activities {
     background-color: #D8D8D8 ;
     color:#000;
-    height:1000px;
+    height:1500px;
     width:100%;
 }
 
@@ -70,7 +76,7 @@ p::selection{
 #works {
   background-color: #D8D8D8 ;
   color:#000;
-  height: 6000px;
+  height: 7000px;
   width:100%;
   
 }
@@ -78,8 +84,8 @@ p::selection{
 .project {
   background-color: #D8D8D8 ;
   color:#000;
-  height:600px;
-  width: 55%;
+  height:700px;
+  width: 70%;
   padding:0 0 0 10px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   margin:0px auto;
@@ -91,7 +97,7 @@ p::selection{
 .subproject{
   background-color:#2980b9;
   color:#000;
-  height:600px;
+  height:700px;
   width: 50%;
   float:right;
   position:relative;
@@ -350,7 +356,7 @@ img {
 }
 .bar::before{
   content:  attr(data-skill);
-  background-color: #f3b0ff;
+  background-color: #b3e6ff;
   display: inline-block;
   padding: 5px 0 5px 10px;
   border-radius: inherit;
@@ -361,10 +367,10 @@ img {
 }
 
 .bar.front::before{
-  background-color: #AFEEEE;
+  background-color: #4dc3ff;
 }
 .bar.back::before{
-  background-color: #a6cfe3;
+  background-color: #0099e6;
 }
 
 .bar.learning::before{
