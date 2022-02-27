@@ -21,20 +21,8 @@ h3 {
     font-size: 2vw; 
     text-indent: 10px;
 }
-h1::selection {
-    background: #0ABAB5;
-}
-h2::selection {
-    background: #0ABAB5;
-}
 
-p::selection{
-    background: #0ABAB5;
-}
 
-.text::selection{
-    background: #0ABAB5;
-}
 #intro {
     background-color: #003366;
     color:#FFFF;
