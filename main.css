@@ -15,11 +15,23 @@ h2{
 }
 h3{
   font-family: Arial;
+  text-align: center;
+  margin:auto;
 }
 h3 {
     text-align: left;
     font-size: 2vw; 
     text-indent: 10px;
+}
+.icon{
+  display: flex;
+  font-size: 3vw;
+}
+.dis{
+  display:flex;
+}
+.all{
+  display:flex;
 }
 
 
@@ -33,15 +45,10 @@ h3 {
 #jobs {
     background-color: #D8D8D8 ;
     color:#000;
-    height: 500px;
+    height: 3000px;
     width:100%;
 }
-#jobs2 {
-  background-color: #D8D8D8 ;
-  color:#000;
-  height: 400px;
-  width:100%;
-}
+
 #activities {
     background-color: #D8D8D8 ;
     color:#000;
@@ -64,32 +71,47 @@ h3 {
 #works {
   background-color: #D8D8D8 ;
   color:#000;
-  height: 7500px;
+  height: 4000px;
   width:100%;
   
 }
 
-.project {
+.wrap1{
+  display: flex;
+  /* flex-direction: column; */
+  margin:10px auto 10px;
+  width:70%;
+  flex-wrap: wrap;
+}
+.project{
   background-color: #D8D8D8 ;
-  color:#000;
-  height:700px;
-  width: 70%;
-  padding:0 0 0 10px;
+  width:40%;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  margin:0px auto;
-  position:relative;
-  top:3vw;
-  z-index:1;
-  
+  margin:20px auto 20px;
+  border-radius: 10px;
 }
 .subproject{
-  background-color:#2980b9;
-  color:#000;
-  height:700px;
-  width: 50%;
-  float:right;
-  position:relative;
-  z-index:2;
+  width:60%;
+  background-color: #2980b9;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin:20px auto 20px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+.subproject img{
+  width:80%;
+  margin:auto;
+  display: block;
+}
+.project h3{
+  color:#0066CC;
+  font-size:1.8vw;
+
+}
+.project h2{
+  line-height: 3vw;
+  font-size: 1.2vw;
 }
 
 
@@ -119,53 +141,6 @@ h3 {
   color: black;
 }
 
-/*工作的動畫*/ 
-  .container1 {
-    position:relative;
-    width: 30%;
-    float: left;
-    top:3vw;
-  }
-  
-  .image {
-    opacity: 1;
-    display: block;
-    width: 30%;
-    height: 30%;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    margin: auto;
-  }
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align:center;
-  }
-  
-  .container1:hover .image {
-    opacity:0.1;
-  }
-  .container1:hover .middle {
-    opacity:1;
-}
-
-  .text1 {
-    color: black;
-    font-size: 1.2vw;
-    padding: 10px 10px;
-    text-align: center;
-    font-family: Microsoft JhengHei;
-  }
-p {
-    text-align: center;
-    font-size: large;
-    font-family: Microsoft JhengHei;
-}
 
 /*activities*/
 * {
@@ -265,6 +240,183 @@ img {
   margin:auto;
 
 }
+   /* 時間軸 */
+   * {
+    box-sizing: border-box;
+  }
+  .content h2{
+      color:black;
+      text-align: center;
+  }
+  /* body {
+    background-color: #474e5d;
+    font-family: Helvetica, sans-serif;
+  } */
+  .content img{
+      width:50%;
+      display:block;
+      margin:auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #6495ED;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    display:flex;
+    flex-direction: column;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+  }
+  .text{
+      background: white;
+      width:50%;
+      float:right;
+      padding:10px;
+  }
+  #SeperationLine{
+      height:1px;
+      border-top:1px #ccc dashed;
+      margin:10px 0px;
+  }
+  .date{
+      background-color: aliceblue;
+      width:50%;
+      position: relative;
+      margin:10px auto 10px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 2vw;
+  }
+  .img-container{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      width:50%;
+  }
+  .content-img{
+      display: flex;
+  }
+  ul{
+      font-size: 1.2vw;
+  }
 
 /* 專業證照 */
 /* Float four columns side by side */
@@ -297,15 +449,42 @@ img {
     margin-bottom: 10px;
   }
 }
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+/* 證照 */
+.item h2{
   text-align: center;
-  background-color: #4682B4;
-  color: white;
+  color:white;
 }
+.wrap{
+  width:1000px;
+  margin:auto;
+  
+}
+.item{
+  width:400px;
+  margin:10px 10px 10px;
+  background-color: #4682B4;
+  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+  border-radius: 10px;
+  padding:10px;
+  border-style:outset;
+  border-color:white;
+  border-width: 8px;
+}    
+.item img{
+  display: block;
+  margin: auto;
+  width:40%
+}
+@media screen and (min-width:768px) {
+.wrap{
+  display: flex;
+  margin:auto;
+}
+.item img{
+  width:50%;
+}
+}    
+
 
 .fa {font-size:50px;}
 /* 能力 */
