@@ -25,10 +25,11 @@
   </div>
     <div id="intro">
         <img id="me" src='./folder/myself.jpg'style = "float:left; width: 15%;border-radius: 50%;">
-        <h2  style="text-indent: 20px;font-size:30px">曾琦雅 Chi- Ya Tseng</h2>
-        <p><i id='education'class="fas fa-graduation-cap"style="float:left; text-indent:20px;"></i></p>
+        
+        <h2  style="text-indent: 20px;">曾琦雅 Chi- Ya Tseng</h2>
+        <p><i id='education'class="fas fa-graduation-cap"style="float:left; text-indent:20px;text-indent:20px;font-size:2vw"></i></p>
         <h2 style="text-indent: 12px">學校科系：國立臺北科技大學 應用英文系</h2>
-        <p><i id='mailicon'class="fas fa-at"style="float:left; text-indent:20px;"></i></p>
+        <p><i id='mailicon'class="fas fa-at"style="float:left; text-indent:20px;font-size:2vw"></i></p>
         <h2 style="text-indent: 20px">聯絡信箱：chiyazheng0329@gmail.com</h2>
         
     </div>
@@ -41,6 +42,7 @@
           <h3>工作經驗</h3>
         </div>
       </div>
+      
       <div class="timeline">
           <div class="container left">
             <div class="content">
@@ -317,51 +319,56 @@
       <input type="radio" name="radio-btn" id="radio9">
       <input type="radio" name="radio-btn" id="radio10">
       <input type="radio" name="radio-btn" id="radio11">
+      <input type="radio" name="radio-btn" id="radio12">
       <!--radio buttons end-->
       <!--slide images start-->
       <div class="slide first">
         <div class="text">學生自治會－財務部部員</div>
-        <img src="./folder/SA.jpg" alt="">
+        <img src="./folder/SA.jpg" alt="學生自治會－財務部部員">
       </div>
       <div class="slide">
         <div class="text">扶輪青年團－公關</div>
-        <img src="./folder/扶青.jpg" alt="">
+        <img src="./folder/扶青.jpg" alt="扶輪青年團－公關">
       </div>
       <div class="slide">
         <div class="text">政見發表會－司儀</div>
-        <img src="./folder/司儀.jpg" alt="">
+        <img src="./folder/司儀.jpg" alt="政見發表會－司儀">
       </div>
       <div class="slide">
         <div class="text">新生說明會－隊輔</div>
-        <img src="./folder/新生說明會.jpg" alt="">
+        <img src="./folder/新生說明會.jpg" alt="新生說明會－隊輔">
       </div>
       <div class="slide">
         <div class="text">英文周－舞蹈組</div>
-        <img src="./folder/lalaland.jpg" alt="">
+        <img src="./folder/lalaland.jpg" alt="英文周－舞蹈組">
       </div>
       <div class="slide">
         <div class="text">Student Buddy學伴</div>
-        <img src="./folder/student buddy.jpg" alt="">
+        <img src="./folder/student buddy.jpg" alt="Student Buddy學伴">
       </div>
       <div class="slide">
         <div class="text">紅樓獎－晚會組／評鑑組／器材組</div>
-        <img src="./folder/redhouse.jpg" alt="">
+        <img src="./folder/redhouse.jpg" alt="紅樓獎－晚會組／評鑑組／器材組">
       </div>
       <div class="slide">
         <div class="text">學生會送舊－活動組</div>
-        <img src="./folder/送舊.JPG" alt="">
+        <img src="./folder/送舊.JPG" alt="學生會送舊－活動組">
       </div>
       <div class="slide">
         <div class="text">110年全國大專院校田徑公開賽</div>
-        <img src="./folder/公開賽.jpg" alt="">
+        <img src="./folder/公開賽.jpg" alt="110年全國大專院校田徑公開賽">
       </div>
       <div class="slide">
         <div class="text">110年全國大專院校運動會</div>
-        <img src="./folder/全大運.jpg" alt="">
+        <img src="./folder/全大運.jpg" alt="110年全國大專院校運動會">
       </div>
       <div class="slide">
         <div class="text">媒體素養教育活動推廣計畫講座心得比賽榮獲佳作</div>
-        <img src="./folder/media competition.png" alt="">
+        <img src="./folder/media competition.png" alt="媒體素養教育活動推廣計畫講座心得比賽榮獲佳作">
+      </div>
+      <div class="slide">
+        <div class="text">111年全國大專院校田徑公開賽</div>
+        <img src="./folder/111公開賽.JPG" alt="111年全國大專院校田徑公開賽">
       </div>
       <!--slide images end-->
       <!--automatic navigation start-->
@@ -377,6 +384,7 @@
         <div class="auto-btn9"></div>
         <div class="auto-btn10"></div>
         <div class="auto-btn11"></div>
+        <div class="auto-btn12"></div>
       </div>
       <!--automatic navigation end-->
     </div>
@@ -393,6 +401,7 @@
       <label for="radio9" class="manual-btn"></label>
       <label for="radio10" class="manual-btn"></label>
       <label for="radio11" class="manual-btn"></label>
+      <label for="radio12" class="manual-btn"></label>
     </div>
     <!--manual navigation end-->
   </div>
@@ -403,10 +412,10 @@
   setInterval(function(){
     document.getElementById('radio' + counter).checked = true;
     counter++;
-    if(counter > 11){
+    if(counter > 12){
       counter = 1;
     }
-  }, 3000);
+  }, 3500);
   </script>  
 
   
