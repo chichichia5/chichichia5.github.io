@@ -1,3 +1,4 @@
+
 // When the user scrolls down 20px from the top of the document, slide down the navbar
 // When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
 window.onscroll = function() {scrollFunction()};
@@ -6,7 +7,7 @@ function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-50px";
+    document.getElementById("navbar").style.top = "-80px";
   }
 }
 filterSelection("all")
@@ -42,13 +43,46 @@ function w3RemoveClass(element, name) {
 }
 
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
+window.onload = function() {
+  // toeic
+  let view_toeic_cert = document.getElementById("view-toeic-cert");
+  let toeic_certificate = document.getElementById("toeic-certificate");
+  view_toeic_cert.onmouseover = function() {mouseOverToeicScore()};
+  view_toeic_cert.onmouseout = function() {mouseOutToeicScore()};
+  toeic_certificate.onmouseover = function() {mouseOverToeicScore()};
+  toeic_certificate.onmouseout = function() {mouseOutToeicScore()};
+  function mouseOverToeicScore() {
+    document.getElementById("toeic-certificate").style.width = "130%";
+  }
+  function mouseOutToeicScore() {
+    document.getElementById("toeic-certificate").style.width = "0";
+  }
+  // Google Ads
+  let view_googleAds_cert = document.getElementById("view-googleAds-cert");
+  let googleAds_certificate = document.getElementById("googleAds-certificate");
+  view_googleAds_cert.onmouseover = function() {mouseOverGoogleAds()};
+  view_googleAds_cert.onmouseout = function() {mouseOutGoogleAds()};
+  googleAds_certificate.onmouseover = function() {mouseOverGoogleAds()};
+  googleAds_certificate.onmouseout = function() {mouseOutGoogleAds()};
+  function mouseOverGoogleAds() {
+    document.getElementById("googleAds-certificate").style.width = "130%";
+  }
+  function mouseOutGoogleAds() {
+    document.getElementById("googleAds-certificate").style.width = "0";
+  }
+  // Google media
+  let view_googleMedia_cert = document.getElementById("view-googleMedia-cert");
+  let googleMedia_certificate = document.getElementById("googleMedia-certificate");
+  view_googleMedia_cert.onmouseover = function() {mouseOverGoogleMedia()};
+  view_googleMedia_cert.onmouseout = function() {mouseOutGoogleMedia()};
+  googleMedia_certificate.onmouseover = function() {mouseOverGoogleMedia()};
+  googleMedia_certificate.onmouseout = function() {mouseOutGoogleMedia()};
+  function mouseOverGoogleMedia() {
+    document.getElementById("googleMedia-certificate").style.width = "130%";
+  }
+  function mouseOutGoogleMedia() {
+    document.getElementById("googleMedia-certificate").style.width = "0";
+  }
+   
+
 }
