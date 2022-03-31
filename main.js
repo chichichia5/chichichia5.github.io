@@ -83,6 +83,45 @@ window.onload = function() {
   function mouseOutGoogleMedia() {
     document.getElementById("googleMedia-certificate").style.width = "0";
   }
+  // Google marketing
+  let view_googleMarketing_cert = document.getElementById("view-googleMarketing-cert");
+  let googleMarketing_certificate = document.getElementById("googleMarketing-certificate");
+  view_googleMarketing_cert.onmouseover = function() {mouseOverGoogleMarketing()};
+  view_googleMarketing_cert.onmouseout = function() {mouseOutGoogleMarketing()};
+  googleMarketing_certificate.onmouseover = function() {mouseOverGoogleMarketing()};
+  googleMarketing_certificate.onmouseout = function() {mouseOutGoogleMarketing()};
+  function mouseOverGoogleMarketing() {
+    document.getElementById("googleMarketing-certificate").style.width = "130%";
+  }
+  function mouseOutGoogleMarketing() {
+    document.getElementById("googleMarketing-certificate").style.width = "0";
+  }
+  // Google Analytics
+  let view_googleAnalytics_cert = document.getElementById("view-googleAnalytics-cert");
+  let googleAnalytics_certificate = document.getElementById("googleAnalytics-certificate");
+  view_googleAnalytics_cert.onmouseover = function() {mouseOverGoogleAnalytics()};
+  view_googleAnalytics_cert.onmouseout = function() {mouseOutGoogleAnalytics()};
+  googleAnalytics_certificate.onmouseover = function() {mouseOverGoogleAnalytics()};
+  googleAnalytics_certificate.onmouseout = function() {mouseOutGoogleAnalytics()};
+  function mouseOverGoogleAnalytics() {
+    document.getElementById("googleAnalytics-certificate").style.width = "130%";
+  }
+  function mouseOutGoogleAnalytics() {
+    document.getElementById("googleAnalytics-certificate").style.width = "0";
+  }
+  // International Trade
+  let view_trade_cert = document.getElementById("view-trade-cert");
+  let trade_certificate = document.getElementById("trade-certificate");
+  view_trade_cert.onmouseover = function() {mouseOvertrade()};
+  view_trade_cert.onmouseout = function() {mouseOuttrade()};
+  trade_certificate.onmouseover = function() {mouseOvertrade()};
+  trade_certificate.onmouseout = function() {mouseOuttrade()};
+  function mouseOvertrade() {
+    document.getElementById("trade-certificate").style.width = "130%";
+  }
+  function mouseOuttrade() {
+    document.getElementById("trade-certificate").style.width = "0";
+  }
    
 
 }
