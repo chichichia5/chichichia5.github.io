@@ -3,9 +3,8 @@ body {
     margin:0;
 }
 
-
 ul {
-    font-family: helvetica;
+    font-family: Arial;
 }
 a {
   text-decoration: none;
@@ -43,6 +42,45 @@ h3 {
     height:auto;
     padding:20px 20px 20px 20px;
     width:100%;
+    display: flex;
+    
+}
+.detail{
+  width:50%;
+}
+.img_container{
+  display: flex;
+  justify-content: space-around;
+  padding:10px 10px;
+}
+.img_container img{
+  width:100%;
+  display: block;
+  margin:auto;
+}
+#intro .contact a{
+  text-decoration: none;
+  margin: 4% 0;
+  width: 20%;
+  transition: width 0.9s 0s ease;
+}
+
+#intro .contact {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  width: 30%;
+  height: auto;
+  background-color: white;
+  margin: 0 0 1vw;
+  box-sizing: border-box;
+  color:#000;
+  border-radius: 10px;
+  padding:10px 10px;
+}
+#intro h2{
+  font-size: 1.8vw;
 }
 #jobs {
     background-color: #FFFAFA ;
@@ -77,8 +115,11 @@ h3 {
   width:100%;
   
 }
+.end{
+  background-color: #666;
+}
 
-
+/* project */
 .wrap1{
   display: flex;
   /* flex-direction: column; */
@@ -87,10 +128,9 @@ h3 {
   flex-wrap: wrap;
 }
 .project{
-  background-color: #D8D8D8 ;
+  background-color: white;
   width:40%;
-  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
-  border-style: dashed;
+  border-style: solid;
   border-color: #003366;
   margin:20px auto 20px;
   border-radius: 10px;
@@ -99,8 +139,7 @@ h3 {
 .subproject{
   width:60%;
   background-color: #2980b9;
-  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
-  border-style: dashed;
+  border-style: solid;
   border-color: #003366;
   margin:20px auto 20px;
   display: flex;
@@ -114,14 +153,13 @@ h3 {
 }
 .project h3{
   color:#0066CC;
-  font-size:1.8vw;
+  font-size:1.5vw;
 
 }
 .project h2{
   line-height: 3vw;
-  font-size: 1.2vw;
+  font-size: 1vw;
 }
-
 
 
 #navbar {
@@ -321,33 +359,6 @@ img {
     left: 50%;
   }
   
-  /* Add arrows to the left container (pointing right) */
-  .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid #F0F8FF;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #F0F8FF;
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid #F0F8FF;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
   
   /* Fix the circle for containers on the right side */
   .right::after {
@@ -357,11 +368,14 @@ img {
   /* The actual content */
   .content {
     padding: 20px 30px;
-    background-color: #F0F8FF;
+    background-color: white;
     position: relative;
     border-radius: 6px;
     display:flex;
     flex-direction: column;
+    /* border-style:solid;
+    border-color:#000; */
+    box-shadow: 10px 10px 5px #A9A9A9;
   }
   
   /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -408,13 +422,14 @@ img {
       margin:10px 0px;
   }
   .date{
-      background-color: aliceblue;
-      width:80%;
+      background-color: white;
+      width:50%;
       position: relative;
-      margin:10px auto 10px;
+      margin:20px auto 20px;
       border-radius: 10px;
       text-align: center;
-      font-size: 2vw;
+      font-size: 1.5vw;
+      box-shadow: 10px 10px 5px #A9A9A9;
   }
   .img-container{
       display:flex;
@@ -426,7 +441,8 @@ img {
       display: flex;
   }
   ul{
-      font-size: 1.2vw;
+      font-size: 1vw;
+      line-height: 2vw;
   }
 
 /* 專業證照 */
@@ -480,7 +496,7 @@ img {
   border-radius: 5px;
   /* margin-left: 10px; */
   height: auto;
-  color: white;
+  color: black;
   background-color: #87CEEB;
   transition: background-color 0.2s 0 ease;
   text-align: center;
@@ -490,6 +506,7 @@ img {
 
 .item #view-toeic-cert:hover {
   background-color: #666;
+  color:white
 }
 /* Google Ads */
 .wrap #googleAds-certificate {
@@ -510,7 +527,7 @@ img {
   border-radius: 5px;
   /* margin-left: 10px; */
   height: auto;
-  color: white;
+  color: black;
   background-color: #87CEEB;
   transition: background-color 0.2s 0 ease;
   text-align: center;
@@ -520,9 +537,41 @@ img {
 
 .item #view-googleAds-cert:hover {
   background-color: #666;
+  color:white;
 }
 /* Google Media */
 .wrap #googleMedia-certificate {
+  width: 0%;
+  display: block;
+  margin: auto;
+  box-shadow: 3px 3px 3px #999;
+  transition: width 0.3s 0s ease-in-out; 
+  position:absolute;
+  right: 100%;
+  z-index:1;
+  top:0;
+}
+
+.item #view-googleMedia-cert {
+  display: block;
+  padding: 10px 10px;
+  border-radius: 5px;
+  height: auto;
+  color: black;
+  background-color: #87CEEB;
+  transition: background-color 0.2s 0 ease;
+  text-align: center;
+  margin:auto;
+  font-size: 1.2vw;
+}
+
+.item #view-googleMedia-cert:hover {
+  background-color: #666;
+  color:white;
+}
+
+/* Google Marketing */
+.wrap #googleMarketing-certificate {
   width: 0%;
   display: block;
   margin: auto;
@@ -534,12 +583,12 @@ img {
   top:0;
 }
 
-.item #view-googleMedia-cert {
+.item #view-googleMarketing-cert {
   display: block;
   padding: 10px 10px;
   border-radius: 5px;
   height: auto;
-  color: white;
+  color: black;
   background-color: #87CEEB;
   transition: background-color 0.2s 0 ease;
   text-align: center;
@@ -547,8 +596,69 @@ img {
   font-size: 1.2vw;
 }
 
-.item #view-googleMedia-cert:hover {
+.item #view-googleMarketing-cert:hover {
   background-color: #666;
+  color:white;
+}
+/* Google Analytics */
+.wrap #googleAnalytics-certificate {
+  width: 0%;
+  display: block;
+  margin: auto;
+  box-shadow: 3px 3px 3px #999;
+  transition: width 0.3s 0s ease-in-out; 
+  position:absolute;
+  left: 100%;
+  z-index:1;
+  top:0;
+}
+
+.item #view-googleAnalytics-cert {
+  display: block;
+  padding: 10px 10px;
+  border-radius: 5px;
+  height: auto;
+  color: black;
+  background-color: #87CEEB;
+  transition: background-color 0.2s 0 ease;
+  text-align: center;
+  margin:auto;
+  font-size: 1.2vw;
+}
+
+.item #view-googleAnalytics-cert:hover {
+  background-color: #666;
+  color:white;
+}
+/* Internatioal Trade */
+.wrap #trade-certificate {
+  width: 0%;
+  display: block;
+  margin: auto;
+  box-shadow: 3px 3px 3px #999;
+  transition: width 0.3s 0s ease-in-out; 
+  position:absolute;
+  right: 100%;
+  z-index:1;
+  top:0;
+}
+
+.item #view-trade-cert {
+  display: block;
+  padding: 10px 10px;
+  border-radius: 5px;
+  height: auto;
+  color: black;
+  background-color: #87CEEB;
+  transition: background-color 0.2s 0 ease;
+  text-align: center;
+  margin:auto;
+  font-size: 1.2vw;
+}
+
+.item #view-trade-cert:hover {
+  background-color: #666;
+  color:white;
 }
 
 .item h2{
@@ -556,7 +666,7 @@ img {
   color:white;
 }
 .wrap{
-  width:1000px;
+  width:90%;
   margin:auto;
   /* position:relative; */
 }
