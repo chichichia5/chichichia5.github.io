@@ -52,7 +52,7 @@ window.onload = function() {
   toeic_certificate.onmouseover = function() {mouseOverToeicScore()};
   toeic_certificate.onmouseout = function() {mouseOutToeicScore()};
   function mouseOverToeicScore() {
-    document.getElementById("toeic-certificate").style.width = "130%";
+    document.getElementById("toeic-certificate").style.width = "180%";
   }
   function mouseOutToeicScore() {
     document.getElementById("toeic-certificate").style.width = "0";
@@ -122,6 +122,19 @@ window.onload = function() {
   function mouseOuttrade() {
     document.getElementById("trade-certificate").style.width = "0";
   }
-   
+  // Business
+  let view_business_cert = document.getElementById("view-business-cert");
+  let business_certificate = document.getElementById("business-certificate");
+  view_business_cert.onmouseover = function() {mouseOverbusiness()};
+  view_business_cert.onmouseout = function() {mouseOutbusiness()};
+  business_certificate.onmouseover = function() {mouseOverbusiness()};
+  business_certificate.onmouseout = function() {mouseOutbusiness()};
+  function mouseOverbusiness() {
+    document.getElementById("business-certificate").style.width = "130%";
+  }
+  function mouseOutbusiness() {
+    document.getElementById("business-certificate").style.width = "0";
+  }
+ 
 
 }
