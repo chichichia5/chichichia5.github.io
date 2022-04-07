@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: monospace;
     margin:0;
@@ -46,6 +50,7 @@ h3 {
     width:100%;
     display: flex;
     position: relative;
+    overflow-y: scroll;
     
 }
 .me_img{
@@ -103,6 +108,7 @@ h3 {
     color:#000;
     height: auto;
     width:100%;
+    overflow-y: scroll;
 }
 
 #activities {
@@ -110,7 +116,7 @@ h3 {
     color:#000;
     height:auto;
     width:100%;
-    
+    overflow-y: scroll;
 }
 
 #certificates {
@@ -118,18 +124,21 @@ h3 {
   color:#000;
   height:auto;
   width:100%;
+  overflow-y: scroll;
 }
 #skills {
   background-color: #FFFAFA ;
   color:#000;
   height:auto;
   width:100%;
+  overflow-y: scroll;
 }
 #works {
   background-color: #FFFAFA ;
   color:#000;
   height: auto;
   width:100%;
+  overflow-y: scroll;
   
 }
 .end{
@@ -359,6 +368,15 @@ h3 {
       justify-content: center;
       width:50%;
   }
+  .contact  img{
+    transition: all .2s ease-in-out; 
+  }
+  .contact img:hover { 
+    transform: scale(1.5); 
+  }   
+  .contact img:hover { 
+    transform: scale(1.3); 
+  }  
   .content-img{
       display: flex;
   }
