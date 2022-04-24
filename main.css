@@ -540,6 +540,36 @@ h3 {
   background-color: #666;
   color:white;
 }
+/* line biz */
+.wrap #line-certificate {
+  width: 0%;
+  display: block;
+  margin: auto;
+  box-shadow: 3px 3px 3px #999;
+  transition: width 0.3s 0s ease-in-out; 
+  position:absolute;
+  right: 100%;
+  z-index:1;
+  top:0;
+}
+
+.item #view-line-cert {
+  display: block;
+  padding: 10px 10px;
+  border-radius: 5px;
+  height: auto;
+  color: black;
+  background-color: #87CEEB;
+  transition: background-color 0.2s 0 ease;
+  text-align: center;
+  margin:auto;
+  font-size: 1.2vw;
+}
+
+.item #view-line-cert:hover {
+  background-color: #666;
+  color:white;
+}
 /* Internatioal Trade */
 .wrap #trade-certificate {
   width: 0%;
@@ -548,7 +578,7 @@ h3 {
   box-shadow: 3px 3px 3px #999;
   transition: width 0.3s 0s ease-in-out; 
   position:absolute;
-  right: 100%;
+  left: 100%;
   z-index:1;
   top:0;
 }
