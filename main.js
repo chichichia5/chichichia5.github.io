@@ -52,7 +52,7 @@ window.onload = function() {
   toeic_certificate.onmouseover = function() {mouseOverToeicScore()};
   toeic_certificate.onmouseout = function() {mouseOutToeicScore()};
   function mouseOverToeicScore() {
-    document.getElementById("toeic-certificate").style.width = "180%";
+    document.getElementById("toeic-certificate").style.width = "50%";
   }
   function mouseOutToeicScore() {
     document.getElementById("toeic-certificate").style.width = "0";
@@ -65,7 +65,7 @@ window.onload = function() {
   googleAds_certificate.onmouseover = function() {mouseOverGoogleAds()};
   googleAds_certificate.onmouseout = function() {mouseOutGoogleAds()};
   function mouseOverGoogleAds() {
-    document.getElementById("googleAds-certificate").style.width = "130%";
+    document.getElementById("googleAds-certificate").style.width = "30%";
   }
   function mouseOutGoogleAds() {
     document.getElementById("googleAds-certificate").style.width = "0";
@@ -78,7 +78,7 @@ window.onload = function() {
   googleMedia_certificate.onmouseover = function() {mouseOverGoogleMedia()};
   googleMedia_certificate.onmouseout = function() {mouseOutGoogleMedia()};
   function mouseOverGoogleMedia() {
-    document.getElementById("googleMedia-certificate").style.width = "130%";
+    document.getElementById("googleMedia-certificate").style.width = "30%";
   }
   function mouseOutGoogleMedia() {
     document.getElementById("googleMedia-certificate").style.width = "0";
@@ -91,12 +91,12 @@ window.onload = function() {
   googleMarketing_certificate.onmouseover = function() {mouseOverGoogleMarketing()};
   googleMarketing_certificate.onmouseout = function() {mouseOutGoogleMarketing()};
   function mouseOverGoogleMarketing() {
-    document.getElementById("googleMarketing-certificate").style.width = "130%";
+    document.getElementById("googleMarketing-certificate").style.width = "30%";
   }
   function mouseOutGoogleMarketing() {
     document.getElementById("googleMarketing-certificate").style.width = "0";
   }
-  // Google Analytics
+  // Google Analytics 
   let view_googleAnalytics_cert = document.getElementById("view-googleAnalytics-cert");
   let googleAnalytics_certificate = document.getElementById("googleAnalytics-certificate");
   view_googleAnalytics_cert.onmouseover = function() {mouseOverGoogleAnalytics()};
@@ -104,10 +104,36 @@ window.onload = function() {
   googleAnalytics_certificate.onmouseover = function() {mouseOverGoogleAnalytics()};
   googleAnalytics_certificate.onmouseout = function() {mouseOutGoogleAnalytics()};
   function mouseOverGoogleAnalytics() {
-    document.getElementById("googleAnalytics-certificate").style.width = "130%";
+    document.getElementById("googleAnalytics-certificate").style.width = "30%";
   }
   function mouseOutGoogleAnalytics() {
     document.getElementById("googleAnalytics-certificate").style.width = "0";
+  }
+  // Google Analytics Basic
+  let view_googleAnalyticsBa_cert = document.getElementById("view-googleAnalyticsBa-cert");
+  let googleAnalyticsBa_certificate = document.getElementById("googleAnalyticsBa-certificate");
+  view_googleAnalyticsBa_cert.onmouseover = function() {mouseOverGoogleAnalyticsBa()};
+  view_googleAnalyticsBa_cert.onmouseout = function() {mouseOutGoogleAnalyticsBa()};
+  googleAnalyticsBa_certificate.onmouseover = function() {mouseOverGoogleAnalyticsBa()};
+  googleAnalyticsBa_certificate.onmouseout = function() {mouseOutGoogleAnalyticsBa()};
+  function mouseOverGoogleAnalyticsBa() {
+    document.getElementById("googleAnalyticsBa-certificate").style.width = "30%";
+  }
+  function mouseOutGoogleAnalyticsBa() {
+    document.getElementById("googleAnalyticsBa-certificate").style.width = "0";
+  }
+  // Google Analytics Advanced
+  let view_googleAnalyticsAd_cert = document.getElementById("view-googleAnalyticsAd-cert");
+  let googleAnalyticsAd_certificate = document.getElementById("googleAnalyticsAd-certificate");
+  view_googleAnalyticsAd_cert.onmouseover = function() {mouseOverGoogleAnalyticsAd()};
+  view_googleAnalyticsAd_cert.onmouseout = function() {mouseOutGoogleAnalyticsAd()};
+  googleAnalyticsAd_certificate.onmouseover = function() {mouseOverGoogleAnalyticsAd()};
+  googleAnalyticsAd_certificate.onmouseout = function() {mouseOutGoogleAnalyticsAd()};
+  function mouseOverGoogleAnalyticsAd() {
+    document.getElementById("googleAnalyticsAd-certificate").style.width = "30%";
+  }
+  function mouseOutGoogleAnalyticsAd() {
+    document.getElementById("googleAnalyticsAd-certificate").style.width = "0";
   }
   // line
   let view_line_cert = document.getElementById("view-line-cert");
@@ -117,7 +143,7 @@ window.onload = function() {
   line_certificate.onmouseover = function() {mouseOverline()};
   line_certificate.onmouseout = function() {mouseOutline()};
   function mouseOverline() {
-    document.getElementById("line-certificate").style.width = "130%";
+    document.getElementById("line-certificate").style.width = "30%";
   }
   function mouseOutline() {
     document.getElementById("line-certificate").style.width = "0";
@@ -130,7 +156,7 @@ window.onload = function() {
   trade_certificate.onmouseover = function() {mouseOvertrade()};
   trade_certificate.onmouseout = function() {mouseOuttrade()};
   function mouseOvertrade() {
-    document.getElementById("trade-certificate").style.width = "130%";
+    document.getElementById("trade-certificate").style.width = "30%";
   }
   function mouseOuttrade() {
     document.getElementById("trade-certificate").style.width = "0";
@@ -143,7 +169,7 @@ window.onload = function() {
   business_certificate.onmouseover = function() {mouseOverbusiness()};
   business_certificate.onmouseout = function() {mouseOutbusiness()};
   function mouseOverbusiness() {
-    document.getElementById("business-certificate").style.width = "130%";
+    document.getElementById("business-certificate").style.width = "30%";
   }
   function mouseOutbusiness() {
     document.getElementById("business-certificate").style.width = "0";
