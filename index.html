@@ -1,1078 +1,513 @@
-html {
-  scroll-behavior: smooth;
-}
+<!DOCTYPE html>
 
-body {
-    font-family: monospace;
-    margin:0;
-}
-*{
-  font-family: Arial;
-}
-ul {
-    font-family: Arial;
-}
-a {
-  text-decoration: none;
-  color: #0066CC;
-}
-h2{
-  font-family: Arial;
-  font-size: 1.5vw;
-}
-h3{
-  font-family: Arial;
-  text-align: center;
-  margin:auto;
-}
-h3 {
-    text-align: left;
-    font-size: 2vw; 
-    text-indent: 10px;
-}
-.icon{
-  display: flex;
-  font-size: 3vw;
-}
-.dis{
-  display:flex;
-}
-.all{
-  display:flex;
-}
-
-
-#intro {
-    background-color: #003366;
-    color:#FFFF;
-    height:auto;
-    padding:20px 20px 20px 20px;
-    width:100%;
-    display: flex;
-    position: relative;
-    overflow-y: scroll;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width;initial-scale=1.0;user-scalable=1;maximum-scale=1.0">
+    <title>個人履歷</title> 
+    <link rel="stylesheet" href="main.css">
+    <script src= 'main.js'></script>
+    <script src="https://kit.fontawesome.com/836af3f0a0.js" crossorigin="anonymous"></script>
     
-}
-.me_img{
-  width:50%;
-  border-radius: 50%;
+</head>
+<body>
+  <div id="navbar">
+    <a href="#intro"style="font-size: 1.5vw;">回首頁</a>
+    <a href="#jobs"style="font-size: 1.5vw;">工作經驗</a>
+    <a href="#certificates"style="font-size: 1.5vw;">專業證照</a>
+    <a href="#skills"style="font-size: 1.5vw;">語言能力&技能</a>
+    <a href="#works"style="font-size: 1.5vw;">作品集</a>
+    <a href="#activities"style="font-size: 1.5vw;">社團活動</a>
+    <a href="https://chichichia5.github.io/eng/"style="font-size: 1.5vw;">English</a>
+  </div>
+  <input type='checkbox' name="" id="menu_control"></input> 
+    <label for="menu_control" class="menu_btn">
+      <span>選單</span>
+    </label> 
+    <div id="intro">
+      <div class="me_img">
+        <img  src='./folder/myself.jpg' style=" border-radius: 50%;">
+       </div> 
+      <div class="detail">
+        <h2  style="text-indent: 20px;font-size: 2.5vw;">曾琦雅 Chi- Ya Tseng</h2>
+        <p><i id='education'class="fas fa-graduation-cap"style="float:left; text-indent:20px;text-indent:20px;font-size:2vw"></i></p>
+        <h2 style="text-indent: 12px">國立臺北科技大學 應用英文系</h2>
+      </div>  
+        <div class="contact">
+          <h3 style="width:auto">聯絡資訊</h3>
+          <vr>
+            <hr style="background-color:black;height:0.5vw;border-radius:5px;">
+          <div class="img_container">
+            <a href='https://www.instagram.com/chichichia5/'><img src="./folder/instagram.png"title='Instagram'></a>
+            <a href='https://www.linkedin.com/in/%E7%90%A6%E9%9B%85-%E6%9B%BE-02a7ba232/'><img src="./folder/linkedin.png"title='LinkedIn'></a>
+            <a href='mailto:chiyazheng0329@gmail.com'><img src="./folder/email.png"title='E-mail'></a>
+          </div>
+        </div>
+        <input type='checkbox' name="" id="menu_control"></input:>
+  <!-- <div class="header"> -->
+    <label for="menu_control" class="menu_btn">
+      <span>選單</span>
+    </label>
+    <nav>
+      <a href="#home">回首頁</a>
+      <a href="#jobs">工作經驗</a>
+      <a href="#certificates">專業證照</a>
+      <a href="#skills">語言能力&技能</a>
+      <a href="#works">作品集</a>
+      <a href="#activities">社團活動</a>
+      <a href="https://chichichia5.github.io/eng/">English</a>
+    </nav>
+  <!-- </div> -->
+    </div>
+    <div style="padding:15px 10px;"id ='jobs'>
+      <div class="all">
+        <div class="icon">
+          <p><i class="fas fa-briefcase"></i></p>
+        </div>
+        <div class="dis">
+          <h3>工作經驗</h3>
+        </div>
+      </div>
+      
+      <div class="timeline">
+          <div class="container left">
+            <div class="content">
+              <h2><a href='http://www.compasspr.com.tw/'>達豐公關顧問股份有限公司</a> <br>實習生</h2>
+              <div class="content-img">
+                  <div class="img-container">
+                      <img src="./folder/compasspr.jpg" style="width:100%">
+                  </div>
+                  <ul>
+                      <li>媒體監測報告製作</li>
+                      <li>旅行社及消費者物料準備與寄送</li>
+                      <li>資料整理(名片資料建立)</li>
+                      <li>倉儲管理(文宣品及贈品整理、庫存控制)</li>
+                      <li>外務(郵件寄送、機票開票)</li>
+                      <li>平日、假日活動支援(活動接待)</li>
+                  </ul>
+              </div>    
+            </div>
+            <div class="date">
+              2022.03~現在
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+                <h2><a href='https://eng.ntut.edu.tw/'>臺北科技大學應用英文系</a> <br>教授計畫研究助理</h2>
+                <div class="content-img">
+                    <div class="img-container">
+                        <img src="./folder/NTUTeng.png" style="width:100%">
+                    </div>
+                    <ul>
+                        <li>金費核銷</li>
+                        <li>課堂助教</li>
+                    </ul>
+                </div>    
+              </div>
+              <div class="date">
+                2022.03~2022.06
+              </div>
+        </div>
+          
+          <div class="container left">
+              <div class="content">
+                  <h2><a href='https://www.rulin.com.tw/'>儒林升大學補習班</a> <br>英文輔導老師</h2>
+                  <div class="content-img">
+                      <div class="img-container">
+                          <img src="./folder/儒林.jpg" style="width:100%">
+                      </div>
+                      <ul>
+                          <li>高中學測英文題目輔導</li>
+                          <li>高中學測英文作文輔導</li>
+                      </ul>
+                  </div>    
+                </div>
+                <div class="date">
+                  2021.10~2022.03
+                </div>
+          </div>
+          <div class="container right">
+              <div class="content">
+                  <h2><a href='https://eng.ntut.edu.tw/p/406-1091-109643,r551.php?Lang=zh-tw'>教育部</a> <br>夜光天使計畫</h2>
+                  <div class="content-img">
+                      <div class="img-container">
+                          <img src="./folder/教育部.png" style="width:100%">
+                      </div>
+                      <ul>
+                          <li>教材編制</li>
+                          <li>為偏鄉國小學童線上教授英文</li>
+                      </ul>
+                  </div>    
+                </div>
+                <div class="date">
+                  2021.10~現在
+                </div>
+          </div>
+          <div class="container left">
+              <div class="content">
+                  <h2><a href='https://cnc.ntut.edu.tw/app/home.php'>國立台北科技大學－計算機與網路中心</a> <br>行政工讀生</h2>
+                  <div class="content-img">
+                      <div class="img-container">
+                          <img src="./folder/cnc1.png" style="width:100%">
+                      </div>
+                      <ul>
+                          <li>全校師生網路、電腦軟硬體問題排解</li>
+                          <li>說明書翻譯</li>
+                          <li>電腦教室內部電腦軟硬體管理</li>
+                      </ul>
+                  </div>    
+                </div>
+                <div class="date">
+                  2020.02~現在
+                </div>
+          </div>
+          <div class="container right">
+              <div class="content">
+                  <h2><a href='http://aery.pro/'>Aery 美學繪圖板</a> <br>社群小編</h2>
+                  <div class="content-img">
+                      <div class="img-container">
+                          <img src="./folder/aery.png" style="width:100%">
+                      </div>
+                      <ul>
+                          <li>使用者問題排解</li>
+                          <li>臉書文案撰寫</li>
+                          <li>官網中英文案撰寫</li>
+                          <li>出貨</li>
+                      </ul>
+                  </div>    
+                </div>
+                <div class="date">
+                  2021.07~2021.08
+                </div>
+          </div>
+          <div class="container left">
+              <div class="content">
+                  <h2><a href='http://je.joy.com.tw/'>佳音英文</a> <br>英文輔導老師</h2>
+                  <div class="content-img">
+                      <div class="img-container">
+                          <img src="./folder/joy.png" style="width:100%">
+                      </div>
+                      <ul>
+                          <li>國小至高中英文課後輔導</li>
+                      </ul>
+                  </div>    
+                </div>
+                <div class="date">
+                  2020.09~2021.09
+                </div>
+        </div>
+        </div> 
+        </div>
+        
 
-}
-.me_img img{
-   width:100%; 
-   display: block;
-   margin: auto;
-}
-.detail{
-  width:100%;
-  /* position: relative;
-  display: inline; */
-}
-.img_container{
-  display: flex;
-  justify-content: space-around;
-  padding:10px 10px;
-}
-.img_container img{
-  width:100%;
-  display: block;
-  margin:auto;
-  position: relative;
-}
-#intro .contact a{
-  text-decoration: none;
-  margin: 4% 0;
-  width: 20%;
-  transition: width 0.9s 0s ease;
-}
-
-#intro .contact {
-  display: flex;
-  flex-direction: row;
-  /* justify-content: center; */
-  flex-wrap: wrap;
-  width: 100%;
-  height: auto;
-  background-color: white;
-  margin: 0 0 1vw;
-  box-sizing: border-box;
-  color:#000;
-  border-radius: 10px;
-  padding:10px 10px;
-}
-#intro h2{
-  font-size: 1.8vw;
-}
-#jobs {
-    background-color: #FFFAFA ;
-    color:#000;
-    height: auto;
-    width:100%;
-    overflow-y: scroll;
-}
-
-#activities {
-    background-color: #FFFAFA;
-    color:#000;
-    height:auto;
-    width:100%;
-    overflow-y: scroll;
-}
-
-#certificates {
-  background-color: #FFFAFA ;
-  color:#000;
-  height:auto;
-  width:100%;
-  overflow-y: scroll;
-}
-#skills {
-  background-color: #FFFAFA ;
-  color:#000;
-  height:auto;
-  width:100%;
-  overflow-y: scroll;
-}
-#works {
-  background-color: #FFFAFA ;
-  color:#000;
-  height: auto;
-  width:100%;
-  overflow-y: scroll;
-  
-}
-.end{
-  background-color: #666;
-}
-
-/* project */
-.wrap1{
-  display: flex;
-  /* flex-direction: column; */
-  margin:10px auto 10px;
-  width:70%;
-  flex-wrap: wrap;
-}
-.project{
-  background-color: white;
-  width:40%;
-  border-style: solid;
-  border-color: #003366;
-  margin:20px auto 20px;
-  border-radius: 10px;
-  padding:20px;
-}
-.subproject{
-  width:60%;
-  background-color: #2980b9;
-  border-style: solid;
-  border-color: #003366;
-  margin:20px auto 20px;
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 10px;
-}
-.subproject img{
-  width:80%;
-  margin:auto;
-  display: block;
-}
-.project h3{
-  color:#0066CC;
-  font-size:1.5vw;
-
-}
-.project h2{
-  line-height: 3vw;
-  font-size: 1vw;
-}
 
 
-#navbar {
-  background-color: #4682B4; /* Black background color */
-  position: fixed; /* Make it stick/fixed */
-  top: -80px; /* Hide the navbar 50 px outside of the top view */
-  width: 100%; /* Full width */
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
-  z-index:9999;
-}
-
-/* Style the navbar links */
-/*menu*/
-#navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  text-decoration: none;
-  font-size:18px;
-}
-
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
-  border-radius: 30px;
-}
-
-
-
-
-   /* 時間軸 */
-   * {
-    box-sizing: border-box;
-  }
-  .content h2{
-      color:black;
-      text-align: center;
-      font-size: 1.5vw;
-  }
-  /* body {
-    background-color: #474e5d;
-    font-family: Helvetica, sans-serif;
-  } */
-  .content img{
-      width:50%;
-      display:block;
-      margin:auto;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: black;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-  }
-  
-  /* Container around content */
-  .container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-  }
-  
-  /* The circles on the timeline */
-  .container::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid #6495ED;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  /* Place the container to the left */
-  .left {
-    left: 0;
-  }
-  
-  /* Place the container to the right */
-  .right {
-    left: 50%;
-  }
-  
-  
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -16px;
-  }
-  
-  /* The actual content */
-  .content {
-    padding: 20px 30px;
-    background-color: white;
-    position: relative;
-    border-radius: 6px;
-    display:flex;
-    flex-direction: column;
-    /* border-style:solid;
-    border-color:#000; */
-    box-shadow: 10px 10px 5px #A9A9A9;
-  }
-  
-  /* Media queries - Responsive timeline on screens less than 600px wide */
-  @media screen and (max-width: 768px) {
-    /* Place the timelime to the left */
-    .timeline::after {
-    left: 31px;
-    }
+<div style='padding:15px 20px;'id="certificates">
+  <div class="all">
+    <div class="icon">
+      <p><i class="fas fa-book-open"></i></p>
+    </div>
+    <div class="dis">
+      <h3>專業證照</h3>
+    </div>
+  </div>
+  <div class="dis">
+    <h3><u>語言證照</u></h3>
+  </div>
+  <div class="wrap" style="justify-content: center; align-items: center;">
+    <div class="item">
+        <img src="./folder/toeicscore.png" style="width:80%">
+        <h2>TOEIC 930</h2>
+          <div id="view-toeic-cert">查看證書</div>
+    </div>
+  </div>  
+  <img src="./folder/TOEIC_930.jpg" alt="Toeic Certificate" id="toeic-certificate">
+  <div class="dis">
+    <h3><u>Google證照</u></h3>
+  </div>
+  <div class="wrap">  
+    <div class="item">
+        <img src="./folder/magnifier.png">
+        <h2>Google Ads <br>搜尋廣告認證</h2>
+        <div id="view-googleAds-cert">查看證書</div>
+    </div>
+    <div class="item">
+        <img src="./folder/media.png">
+        <h2>Google Ads <br>多媒體廣告認證</h2>
+        <div id="view-googleMedia-cert">查看證書</div>
+    </div>
+    <div class="item">
+      <img src="./folder/google數位學程.png" style="width:60%">
+      <h2>Google 數位學程 <br>基礎數位行銷認證</h2>
+      <div id="view-googleMarketing-cert">查看證書</div>
+      
+    </div>
+  </div>  
+  <img src="./folder/google Ads.png" alt="Google Ads" id="googleAds-certificate"> 
+  <img src="./folder/google Media.png" alt="Google Media" id="googleMedia-certificate">  
+  <img src="./folder/google Marketing.png" alt="Google Marketing" id="googleMarketing-certificate">   
+  <div class="wrap">
+    <div class="item">
+      <img src="./folder/google analytics logo.png">
+      <h2>Google Analytics <br>個人認證</h2>
+      <div id="view-googleAnalytics-cert">查看證書</div>
+    </div>
+    <div class="item">
+        <img src="./folder/google analytics logo.png">
+        <h2>Google Analytics <br>基礎知識課程</h2>
+        <div id="view-googleAnalyticsBa-cert">查看證書</div>
+    </div>
+    <div class="item">
+        <img src="./folder/google analytics logo.png">
+        <h2>Google Analytics <br>進階知識課程</h2>
+        <div id="view-googleAnalyticsAd-cert">查看證書</div>
+    </div>
+  </div>
+  <img src="./folder/google Analytics.png" alt="Google Analytics" id="googleAnalytics-certificate">
+  <img src="./folder/google AnalyticsBa.png" alt="Google AnalyticsBa" id="googleAnalyticsBa-certificate">
+  <img src="./folder/google AnalyticsAd.jpg" alt="Google AnalyticsAd" id="googleAnalyticsAd-certificate">
+  <div class="dis">
+    <h3><u>LINE官方帳號證照</u></h3>
+  </div>
+  <div class="wrap"style="justify-content: center; align-items: center;">
+    <div class="item">
+      <img src="./folder/line biz.png">
+      <h2>LINE <br>廣告產品認證</h2>
+      <div id="view-line-cert">查看證書</div>
+      
+    </div> 
+  </div>
+  <img src="./folder/line 廣告產品認證.png" alt="line" id="line-certificate">
+  <div class="dis">
+    <h3><u>商業證照</u></h3>
+  </div>
+  <div class="wrap"style="justify-content: center; align-items: center;">
+      <div class="item">
+          <img src="./folder/商教協會.jpg" style="width:100%">
+          <h2>中華民國商業職業教育學會 <br>商業管理能力檢定</h2>
+          <div id="view-business-cert">查看證照</div>
+      </div>
+      <div class="item">
+        <img src="./folder/丙檢.png">
+        <h2>國貿技術士檢定</h2>
+        <div id="view-trade-cert">查看證照</div>
+      </div>
     
-    /* Full-width containers */
-    .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-    }
-    
-    /* Make sure that all arrows are pointing leftwards */
-    .container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-    }
+    </div>  
+    <img src="./folder/商業管理檢定.png" alt="business" id="business-certificate">
+    <img src="./folder/國貿業務丙檢.png" alt="International Trade" id="trade-certificate">
+</div>
+<div style='padding:15px 20px;'id="skills">
+  <div class="all">
+    <div class="icon">
+      <p><i class="fas fa-comments"></i></p>
+    </div>
+    <div class="dis">
+      <h3>語言能力&技能</h3>
+    </div>
+  </div>
+    <div class="container2">
+        <div class="bar fluent" data-skill="英文" style="color:black;">精通</div>
+        <div class="bar front expert" data-skill="中文"style="color:black;">母語</div>
+        <div class="bar back intermediate" data-skill="西文 "style="color:black;">學習中</div>
+        <div class="bar back intermediate" data-skill="Python "style="color:black;">學習中</div>
+        <div class="bar back intermediate" data-skill="HTML "style="color:black;">學習中</div>
+        <div class="bar back intermediate" data-skill="CSS "style="color:black;">學習中</div>
+        <div class="bar back intermediate" data-skill="EXCEL "style="color:black;">學習中</div>
+    </div>
+</div>
+<div style='padding:15px 20px;'id="works">
+  <div class="all">
+    <div class="icon">
+      <p><i class="fa-solid fa-folder-open"></i></p>
+    </div>
+    <div class="dis">
+      <h3>作品集(點擊標題進入連結)</h3>
+    </div>
+  </div>
+  <div class="wrap1">
+    <div class="project">
+        <h3><a href="./folder/media competition.pdf">媒體素養教育活動推廣計畫講座心得比賽榮獲佳作</a></h3>
+        <h2>透過這場比賽，讓我更加謹慎使用用字，並且對於媒體在社會中扮演的角色有更多的認知。</h2>
+    </div>
+    <div class="subproject"><img src="./folder/媒體識讀.png"style="width:50%"></div>
+    <div class="project">
+        <h3><a href='https://reurl.cc/bkVMlX'><a href='https://github.com/chichichia5/python'>Python 資料視覺化</a></h3>
+        <h2>利用python，將將近4000筆的人口統計資料，整理成圖表，方便閱讀。範例程式為統計不想再來台灣旅遊的人的國籍。</h2>    
+    </div>
+    <div class="subproject" style="flex-direction: row;">
+        <img src="./folder/python1.png">
+        <img src="./folder/python2.png" style="width:40%;">
+        <img src="./folder/python 3.png" style="width:40%;">
+    </div>
+    <div class="project">
+        <h3><a href='https://reurl.cc/bkVMlX'>Aery 臉書文章</a></h3>
+        <h2>在Aery工作的期間，我負責在Aery工作的期間，我負責臉書文案的發想。這篇文章主要是提醒使用者新功能的更新，順便宣傳Aery會聆聽顧客的意見做出修改。</h2>
+    </div>
+    <div class="subproject"><img src="./folder/Aery FB.png"></div>
+    <div class="project">
+        <h3><a href='https://reurl.cc/3jXGXM'>Aery 官方網站文章</a></h3>
+        <h2>另外，我也負責官網文章的編寫。主要是比較市面上常見品牌的繪圖板，並整理成表格，提供每位想要購買繪圖板的人意見。除了中文版外，也有提供英文版的文章。</h2>
+    </div>
+    <div class="subproject"><img src="./folder/Aery post.png"></div>
+    <div class="project">
+        <h3><a href='./folder/Aery Digital Tablet Device Manual.pdf'>Aery 產品說明書</a></h3>
+        <h2>此外，我也負責中英產品說明書的撰寫，由於有許多專有名詞，因此，我必須查詢大量的資料，找出合適的英文翻譯。</h2>
+    </div>
+    <div class="subproject"><img src="./folder/Aery manual.jpg"style="width:50%"></div>
+    <div class="project">
+        <h3><a href='https://reurl.cc/AKjx4K'>互動小遊戲</a></h3>
+        <h2>在「科技與產業應用」這堂課中，老師邀請了業師教我們使用html、Javascript以及CSS做出一個小遊戲。在學期末的展示中，我的小遊戲獲得全班最高分，也讓我對程式語言更加有興趣。</h2>
+    </div>
+    <div class="subproject"><img src="./folder/bsd.png"></div>
+    <div class="project">
+        <h3>創新創業－卸甲OK繃宣傳影片</h3>
+        <h2>在「創業0到2的思維與實作」這堂課中，我們這組的產品為「卸甲OK繃」，並且在影片運用老師在課堂上教的「黃金圈理論」，使他們對於我們的產品的開發目的產生共鳴。</h2>
+    </div>
+    <div class="subproject"><video style='width:100%'controls><source src="./folder/20211230提案報告.mp4" type="video/mp4"></video></div>
+    <div class="project">
+        <h3><a href='https://reurl.cc/xOadLV'>Wix 官方網站</a></h3>
+        <h2>在「創業0到2的思維與實作」這堂課中，各組必須透過各種方式宣傳自己設計的產品，而我們這組利用Wix來架出基本的官方網站，並且提供產品資訊，團隊介紹。方便顧客了解細節。</h2>
+    </div>
+    <div class="subproject"><img src="./folder/wix.jpg"></div>
+    <div class="project">
+        <h3><a href='https://lin.ee/xN1JfY6'>LINE 官方帳號</a></h3>
+        <h2>此外，我們也規劃了LINE的官方帳號，方便使用者加入好友後，可以透過帳號得知最新消息、聯絡客服人員、或是將品牌分享給好友，提升品牌曝光度。</h2>
+    </div>
+    <div class="subproject"><img src="./folder/line.jpg"style="width:30%"></div>
+    <div class="project">
+        <h3><a href='https://reurl.cc/VjzK4Z'>北科大扶青團粉絲專頁貼文</a></h3>
+        <h2>在扶青團中，我擔任公關，負責在臉書粉絲團內發文。例如：招募新生的文章，活動的分享文等等，讓更多人認識我們的社團，並且招募更多同學加入，幫助更多偏鄉國小的學童。</h2>
+    </div>
+    <div class="subproject"><img src="./folder/扶青文案.png" ></div>
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+<!-- Container for the image gallery -->
+<div style='padding:15px 20px;'id="activities">
+  <div class="all">
+    <div class="icon">
+      <p><i class="fas fa-users"></i></p>
+    </div>
+    <div class="dis">
+      <h3>社團活動</h3>
+    </div>
+  </div>
+  <div class='slide_container'>
+  <div class="slider">
+    <div class="slides">
+     <!--radio buttons start-->
+       <input type="radio" name="radio-btn" id="radio1">
+       <input type="radio" name="radio-btn" id="radio2">
+       <input type="radio" name="radio-btn" id="radio3">
+       <input type="radio" name="radio-btn" id="radio4">
+       <input type="radio" name="radio-btn" id="radio5">
+       <input type="radio" name="radio-btn" id="radio6">
+       <input type="radio" name="radio-btn" id="radio7">
+       <input type="radio" name="radio-btn" id="radio8">
+       <input type="radio" name="radio-btn" id="radio9">
+       <input type="radio" name="radio-btn" id="radio10">
+       <input type="radio" name="radio-btn" id="radio11">
+       <input type="radio" name="radio-btn" id="radio12">
+     <!--radio buttons end-->
   
-    /* Make sure all circles are at the same spot */
-    .left::after, .right::after {
-    left: 15px;
-    }
-    
-    /* Make all right containers behave like the left ones */
-    .right {
-    left: 0%;
-    }
-  }
-  .text1{
-      background: white;
-      width:50%;
-      float:right;
-      padding:10px;
-  }
-  #SeperationLine{
-      height:1px;
-      border-top:1px #ccc dashed;
-      margin:10px 0px;
-  }
-  .date{
-      background-color: white;
-      width:50%;
-      position: relative;
-      margin:20px auto 20px;
-      border-radius: 10px;
-      text-align: center;
-      font-size: 1.5vw;
-      box-shadow: 10px 10px 5px #A9A9A9;
-      font-family: Arial;
-  }
-  .img-container{
-      display:flex;
-      flex-direction: column;
-      justify-content: center;
-      width:50%;
-  }
-  .contact  img{
-    transition: all .2s ease-in-out; 
-  }
-  .contact img:hover { 
-    transform: scale(1.5); 
-  }   
-  .contact img:hover { 
-    transform: scale(1.3); 
-  }  
-  .content-img{
-      display: flex;
-  }
-  ul{
-      font-size: 1vw;
-      line-height: 2vw;
-  }
+     <!--slide images start-->
+     <div class="slide first">
+       <div class="text">學生自治會－財務部部員</div>
+       <img src="./folder/SA.jpg" alt="學生自治會－財務部部員">
+     </div>
+     <div class="slide">
+        <div class="text">北科大扶輪青年團－公關</div>
+        <img src="./folder/扶青.jpg" alt="北科大扶輪社－公關">
+     </div>
+     <div class="slide">
+        <div class="text">政見發表會－司儀</div>
+        <img src="./folder/司儀.jpg" alt="政見發表會－司儀">
+     </div>
+     <div class="slide">
+        <div class="text">新生說明會－隊輔</div>
+        <img src="./folder/新生說明會.jpg" alt="新生說明會－隊輔">
+     </div>
+     <div class="slide">
+      <div class="text">英文周公演－舞蹈組</div>
+      <img src="./folder/lalaland.jpg" alt="英文周公演－舞蹈組">
+    </div>
+    <div class="slide">
+      <div class="text">student buddy學伴</div>
+      <img src="./folder/student buddy.jpg" alt="student buddy學伴">
+    </div>
+    <div class="slide">
+      <div class="text">紅樓獎－晚會/評鑑/器材組</div>
+      <img src="./folder/redhouse.jpg" alt="紅樓獎－晚會/評鑑/器材組">
+    </div>
+    <div class="slide">
+      <div class="text">學生會送舊－活動組</div>
+      <img src="./folder/送舊.JPG" alt="學生會送舊－活動組">
+    </div>
+    <div class="slide">
+      <div class="text">110年國大專院校田徑公開賽會</div>
+      <img src="./folder/公開賽.jpg" alt="110年國大專院校田徑公開賽會">
+    </div>
+    <div class="slide">
+      <div class="text">110年全國大專院校運動會</div>
+      <img src="./folder/全大運.jpg" alt="110年全國大專院校運動會">
+    </div>
+    <div class="slide">
+      <div class="text">媒體識讀講座心得比賽榮獲佳作</div>
+      <img src="./folder/媒體識讀.png" alt="媒體識讀講座心得比賽榮獲佳作">
+    </div>
+    <div class="slide">
+      <div class="text">111年全國大專院校田徑公開賽</div>
+      <img src="./folder/111公開賽.JPG" alt="111年全國大專院校田徑公開賽">
+    </div>
+    <!--slide images end-->
+  
+   
+   <!--automatic navigation end-->
+   </div>
+  
+   <!--manual navigation start-->
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+      <label for="radio5" class="manual-btn"></label>
+      <label for="radio5" class="manual-btn"></label>
+      <label for="radio6" class="manual-btn"></label>
+      <label for="radio7" class="manual-btn"></label>
+      <label for="radio8" class="manual-btn"></label>
+      <label for="radio9" class="manual-btn"></label>
+      <label for="radio10" class="manual-btn"></label>
+      <label for="radio11" class="manual-btn"></label>
+      <label for="radio12" class="manual-btn"></label>
+    </div>
+   <!--manual navigation end-->
+  </div> 
+  <!--image slider end-->
+  </div>
+  
+  <script type="text/javascript">
+  
+  var counter = 1;
+   setInterval(function(){
+     document.getElementById('radio' + counter).checked = true;
+     counter++;
+       if(counter > 12){
+         counter = 1;
+       }
+   }, 6000);
+  </script>
 
-
-/* 證照 */
-/* toeic */
- #toeic-certificate {
-  width: 0%;
-  display: block;
-  margin: auto;
-  box-shadow: 3px 3px 3px #999;
-  transition: width 0.3s 0s ease-in-out; 
-  /* position:absolute; */
-  /*left: 100%;*/
-  /* z-index:1;
-  top:0;  */
-}
-
-
-.item #view-toeic-cert {
-  display: block;
-  padding: 10px 10px;
-  border-radius: 5px;
-  /* margin-left: 10px; */
-  height: auto;
-  color: black;
-  background-color: #87CEEB;
-  transition: background-color 0.2s 0 ease;
-  text-align: center;
-  margin:auto;
-  font-size: 1.2vw;
-}
-
-.item #view-toeic-cert:hover {
-  background-color: #6495ED;
-  color:white
-}
-/* Google Ads */
-#googleAds-certificate {
-  width: 0%;
-  display: block;
-  margin: auto;
-  box-shadow: 3px 3px 3px #999;
-  transition: width 0.3s 0s ease-in-out; 
-  /* position:absolute;
-  left: 100%;
-  z-index:1;
-  top:0; */
-}
-
-.item #view-googleAds-cert {
-  display: block;
-  padding: 10px 10px;
-  border-radius: 5px;
-  /* margin-left: 10px; */
-  height: auto;
-  color: black;
-  background-color: #87CEEB;
-  transition: background-color 0.2s 0 ease;
-  text-align: center;
-  margin:auto;
-  font-size: 1.2vw;
-}
-
-.item #view-googleAds-cert:hover {
-  background-color: #6495ED;
-  color:white;
-}
-/* Google Media */
-#googleMedia-certificate {
-  width: 0%;
-  display: block;
-  margin: auto;
-  box-shadow: 3px 3px 3px #999;
-  transition: width 0.3s 0s ease-in-out; 
-  /* position:absolute;
-  right: 100%;
-  z-index:1;
-  top:0; */
-}
-
-.item #view-googleMedia-cert {
-  display: block;
-  padding: 10px 10px;
-  border-radius: 5px;
-  height: auto;
-  color: black;
-  background-color: #87CEEB;
-  transition: background-color 0.2s 0 ease;
-  text-align: center;
-  margin:auto;
-  font-size: 1.2vw;
-}
-
-.item #view-googleMedia-cert:hover {
-  background-color: #6495ED;
-  color:white;
-}
-
-/* Google Marketing */
-#googleMarketing-certificate {
-  width: 0%;
-  display: block;
-  margin: auto;
-  box-shadow: 3px 3px 3px #999;
-  transition: width 0.3s 0s ease-in-out; 
-  /* position:absolute;
-  left: 100%;
-  z-index:1;
-  top:0; */
-}
-
-.item #view-googleMarketing-cert {
-  display: block;
-  padding: 10px 10px;
-  border-radius: 5px;
-  height: auto;
-  color: black;
-  background-color: #87CEEB;
-  transition: background-color 0.2s 0 ease;
-  text-align: center;
-  margin:auto;
-  font-size: 1.2vw;
-}
-
-.item #view-googleMarketing-cert:hover {
-  background-color: #6495ED;
-  color:white;
-}
-/* Google Analytics  */
-#googleAnalytics-certificate {
-  width: 0%;
-  display: block;
-  margin: auto;
-  box-shadow: 3px 3px 3px #999;
-  transition: width 0.3s 0s ease-in-out; 
-  /* position:absolute;
-  left: 100%;
-  z-index:1;
-  top:0; */
-}
-
-.item #view-googleAnalytics-cert {
-  display: block;
-  padding: 10px 10px;
-  border-radius: 5px;
-  height: auto;
-  color: black;
-  background-color: #87CEEB;
-  transition: background-color 0.2s 0 ease;
-  text-align: center;
-  margin:auto;
-  font-size: 1.2vw;
-}
-
-.item #view-googleAnalytics-cert:hover {
-  background-color: 	#6495ED;
-  color:white;
-}
-/* Google Analytics Basic */
-#googleAnalyticsBa-certificate {
-  width: 0%;
-  display: block;
-  margin: auto;
-  box-shadow: 3px 3px 3px #999;
-  transition: width 0.3s 0s ease-in-out; 
-  /* position:absolute;
-  left: 100%;
-  z-index:1;
-  top:0; */
-}
-
-.item #view-googleAnalyticsBa-cert {
-  display: block;
-  padding: 10px 10px;
-  border-radius: 5px;
-  height: auto;
-  color: black;
-  background-color: #87CEEB;
-  transition: background-color 0.2s 0 ease;
-  text-align: center;
-  margin:auto;
-  font-size: 1.2vw;
-}
-
-.item #view-googleAnalyticsBa-cert:hover {
-  background-color: #6495ED;
-  color:white;
-}
-/* Google Analytics Advanced */
-#googleAnalyticsAd-certificate {
-  width: 0%;
-  display: block;
-  margin: auto;
-  box-shadow: 3px 3px 3px #999;
-  transition: width 0.3s 0s ease-in-out; 
-  /* position:absolute;
-  left: 100%;
-  z-index:1;
-  top:0; */
-}
-
-.item #view-googleAnalyticsAd-cert {
-  display: block;
-  padding: 10px 10px;
-  border-radius: 5px;
-  height: auto;
-  color: black;
-  background-color: #87CEEB;
-  transition: background-color 0.2s 0 ease;
-  text-align: center;
-  margin:auto;
-  font-size: 1.2vw;
-}
-
-.item #view-googleAnalyticsAd-cert:hover {
-  background-color: #6495ED;
-  color:white;
-}
-/* line biz */
-#line-certificate {
-  width: 0%;
-  display: block;
-  margin: auto;
-  box-shadow: 3px 3px 3px #999;
-  transition: width 0.3s 0s ease-in-out; 
-  /* position:absolute;
-  right: 100%;
-  z-index:1;
-  top:0; */
-}
-
-.item #view-line-cert {
-  display: block;
-  padding: 10px 10px;
-  border-radius: 5px;
-  height: auto;
-  color: black;
-  background-color: #87CEEB;
-  transition: background-color 0.2s 0 ease;
-  text-align: center;
-  margin:auto;
-  font-size: 1.2vw;
-}
-
-.item #view-line-cert:hover {
-  background-color: #6495ED;
-  color:white;
-}
-/* Internatioal Trade */
-#trade-certificate {
-  width: 0%;
-  display: block;
-  margin: auto;
-  box-shadow: 3px 3px 3px #999;
-  transition: width 0.3s 0s ease-in-out; 
-  /* position:absolute;
-  left: 100%;
-  z-index:1;
-  top:0; */
-}
-
-.item #view-trade-cert {
-  display: block;
-  padding: 10px 10px;
-  border-radius: 5px;
-  height: auto;
-  color: black;
-  background-color: #87CEEB;
-  transition: background-color 0.2s 0 ease;
-  text-align: center;
-  margin:auto;
-  font-size: 1.2vw;
-}
-
-.item #view-trade-cert:hover {
-  background-color: #6495ED;
-  color:white;
-}
-/* Business Administration Proficiency Test */
-#business-certificate {
-  width: 0%;
-  display: block;
-  margin: auto;
-  box-shadow: 3px 3px 3px #999;
-  transition: width 0.3s 0s ease-in-out; 
-  /* position:absolute;
-  left: 100%;
-  z-index:1;
-  top:0; */
-}
-
-.item #view-business-cert {
-  display: block;
-  padding: 10px 10px;
-  border-radius: 5px;
-  height: auto;
-  color: black;
-  background-color: #87CEEB;
-  transition: background-color 0.2s 0 ease;
-  text-align: center;
-  margin:auto;
-  font-size: 1.2vw;
-}
-
-.item #view-business-cert:hover {
-  background-color: #6495ED;
-  color:white;
-}
-
-.item h2{
-  text-align: center;
-  color:black;
-}
-.wrap{
-  width:90%;
-  margin:auto;
-  /* position:relative; */
-}
-.item{
-  width:400px;
-  margin:20px 20px 20px;
-  background-color: #F0F8FF;
-  border-radius: 10px;
-  padding:10px;
-  border-style:outset;
-  border-color:white;
-  border-width: 8px;
-  position:relative;
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-}    
-.item img{
-  display: block;
-  margin: auto;
-  width:40%
-}
-@media screen and (min-width:768px) {
-.wrap{
-  display: flex;
-  margin:auto;
-}
-.item img{
-  width:50%;
-}
-}    
-
-
-.fa {font-size:50px;}
-/* 能力 */
-.container2{
-  width: 80%;
-  margin: 0 auto;
-}
-@keyframes load{
-  from {
-    width: 0%
-  }
-}
-@-webkit-keyframes load{
-  from {
-    width: 0%
-  }
-}
-@-moz-keyframes load{
-  from {
-    width: 0%
-  }
-}
-@-o-keyframes load{
-  from {
-    width: 0%
-  }
-}
-
-.bar{
-  background-color: #EEE;
-  padding: 7px;
-  border-radius: 30px;
-  margin-bottom: 10px;
-  font-size: 28px;
-  color: #FFF;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-  font-size: 1.5vw;
-}
-.bar::before{
-  content:  attr(data-skill);
-  background-color: #b3e6ff;
-  display: inline-block;
-  padding: 5px 0 5px 10px;
-  border-radius: inherit;
-  animation: load 2s 0s;
-  -webkit-animation: load 2s 0s;
-  -moz-animation: load 2s 0s;
-  -o-animation: load 2s 0s;
-}
-
-.bar.front::before{
-  background-color: #4dc3ff;
-}
-.bar.back::before{
-  background-color: #0099e6;
-}
-
-.bar.learning::before{
-  width: calc(10% - 10px);
-}
-.bar.basic::before{
-  width: calc(30% - 10px);
-}
-.bar.intermediate::before{
-  width: calc(50% - 10px);
-}
-.bar.advanced::before{
-  width: calc(70% - 10px);
-}
-.bar.expert::before{
-  width: calc(90% - 10px);
-
-}.bar.fluent::before{
-  width: calc(90% - 10px);
-}
-.footer{
-  background-color: #A9A9A9;
-  height: 100px;
-  margin-top: 20px;
-}
-.footer-text{
-  float: center;
-  font-size: 1vw;
-  color: black;
-  line-height: 100px;
-} 
-
-/* moblie menu */
-@media screen and (min-width:768px){
-  .menu_btn{
-    display: none;
-  }
-  .header{
-    display: none;
-  }
-  nav a {
-    border-bottom:none ;
-    display: none;
-  }
-  nav{
-    display: none;
-  }
-  #menu_control{
-    display: none;
-  }
-}
-@media screen and (max-width:768px){
-  #navbar{
-    display: none;
-  }
-  #menu_control{
-    position: absolute;
-    opacity: 0;
-  }
-  .menu_btn{
-    width:40px;
-    height:40px;
-    background-color:#4682B4;
-    border-radius: 10px;
-    display:block;
-    position:absolute;
-    top:5px;
-    right:10px;
-
-  }
-
-  .menu_btn span{
-    opacity: 0;
-  }
-  .menu_btn::before{
-    content:"";
-    position:absolute;
-    height:2px;
-    left:2px;
-    width:36px;
-    background-color:white;
-    top:0;
-    bottom:0;
-    margin:auto;
-    box-shadow: 0px 8px 0px white, 0px -8px 0px white;
-  }
-  nav{
-    width:80%;
-    height:auto;
-    background-color: #FFF;
-    position:absolute;
-    left:-100%;
-    transition:0.5s;
-    z-index: 9999;
-  }
-  nav a{
-    display: block;
-    text-decoration: none;
-    color:black;
-    padding:10px 20px;
-    border-bottom:2px solid #A9A9A9;
-    text-align: center;
-    font-size: 5vw;
-    font-family: Arial;
-
-  }
-  #menu_control:checked ~ #intro nav{
-    left:0;
-  }
-  nav a:hover{
-    background-color: #4682B4;
-    color:white;
-  }
-
-}
-/* activities */
-.slider_container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  padding: 0;
-  height: 100vh;
-}
-.slider{
-  border-radius: 10px;
-  overflow: hidden;
-  width: 800px;
-  height: 500px;
-  border: 7px solid white;
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
-  margin:auto;
-}
-
-.slides{
-  width: 500%;
-  height: 500px;
-  display: flex;
-}
-
-.slides input{
-  display: none;
-}
-
-.slide{
-  width: 20%;
-  transition: 2s;
-}
-
-.slide img{
-  width: 800px;
-  height: 500px;
-}
-
-/*css for manual slide navigation*/
-
-.navigation-manual{
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  width: 600px;
-  margin-top: -40px;
-}
-
-.manual-btn{
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-  border: 3px solid white;
-  padding: 5px;
-  width: 30px;
-}
-
-.manual-btn:not(:last-child){
-  margin-right: 40px;
-}
-
-.manual-btn:hover{
-  background: #4682B4;
-}
-
-#radio1:checked ~ .first{
-  margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-  margin-left: -20%;
-}
-
-#radio3:checked ~ .first{
-  margin-left: -40%;
-}
-
-#radio4:checked ~ .first{
-  margin-left: -60%;
-}
-#radio5:checked ~ .first{
-  margin-left: -80%;
-}
-#radio6:checked ~ .first{
-  margin-left: -100%;
-}
-#radio7:checked ~ .first{
-  margin-left: -120%;
-}
-#radio8:checked ~ .first{
-  margin-left: -140%;
-}
-#radio9:checked ~ .first{
-  margin-left: -160%;
-}
-#radio10:checked ~ .first{
-  margin-left: -180%;
-}
-#radio11:checked ~ .first{
-  margin-left: -200%;
-}
-#radio12:checked ~ .first{
-  margin-left: -220%;
-}
-
-
-/*css for automatic navigation*/
-
-.navigation-auto{
-  position: absolute;
-  justify-content: center;
-  margin-top: 460px;
-  display: flex;
-  width: 800px;
-}
-
-.navigation-auto div{
-  border-radius: 10px;
-  transition: 1s;
-  border: 3px solid #4682B4;
-  padding: 5px;
-  width: 30px;
-}
-
-.navigation-auto div:not(:last-child){
-  margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-  background: #4682B4;
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2{
- 
-  background: #4682B4;
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background: #4682B4;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
-  background: #4682B4;
-}
-#radio5:checked ~ .navigation-auto .auto-btn5{
-  background: #4682B4;
-}
-#radio6:checked ~ .navigation-auto .auto-btn6{
-  background: #4682B4;
-}
-#radio7:checked ~ .navigation-auto .auto-btn7{
-  background: #4682B4;
-}
-#radio8:checked ~ .navigation-auto .auto-btn8{
-  background: #4682B4;
-}
-#radio9:checked ~ .navigation-auto .auto-btn9{
-  background: #4682B4;
-}
-#radio10:checked ~ .navigation-auto .auto-btn10{
-  background: #4682B4;
-}
-#radio11:checked ~ .navigation-auto .auto-btn11{
-  background: #4682B4;
-}
-#radio12:checked ~ .navigation-auto .auto-btn12{
-  background: #4682B4;
-}
-
-.text{
-  text-align: center;
-  background-color: #b3e6ff;
-  color:#000;
-  font-size: 2vw;
-}
+  
+</body>
+</html>
