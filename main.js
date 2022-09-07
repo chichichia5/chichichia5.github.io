@@ -148,6 +148,20 @@ window.onload = function() {
   function mouseOutline() {
     document.getElementById("line-certificate").style.width = "0";
   }
+  // Entrepreneurship courses
+  let view_entrepreneur_cert = document.getElementById("view-entrepreneur-cert");
+  let entrepreneur_certificate= document.getElementById("entrepreneur-certificate");
+  view_entrepreneur_cert.onmouseover = function() {mouseOverentrepreneur()};
+  view_entrepreneur_cert.onmouseout = function() {mouseOutentrepreneur()};
+  entrepreneur_certificate.onmouseover = function() {mouseOverentrepreneur()};
+  entrepreneur_certificate.onmouseout = function() {mouseOutentrepreneur()};
+  function mouseOverentrepreneur() {
+    document.getElementById("entrepreneur-certificate").style.width = "30%";
+  }
+  function mouseOutentrepreneur() {
+    document.getElementById("entrepreneur-certificate").style.width = "0";
+  }
+
   // International Trade
   let view_trade_cert = document.getElementById("view-trade-cert");
   let trade_certificate = document.getElementById("trade-certificate");
@@ -174,6 +188,4 @@ window.onload = function() {
   function mouseOutbusiness() {
     document.getElementById("business-certificate").style.width = "0";
   }
- 
-
 }
